@@ -1,0 +1,103 @@
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    // margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+}
+
+.h2, h2 {
+    font-size: 2rem;
+}
+
+.h3, h3 {
+    font-size: 1.75rem;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+.h5, h5 {
+    font-size: 1.25rem;
+}
+
+.h6, h6 {
+    font-size: 1rem;
+}
+
+/* Makes text upper case*/
+.ucase{
+    text-transform: uppercase;
+}
+
+/* Makes text lower case*/
+.lcase{
+    text-transform: lowercase;
+}
+
+/*capitalizes the first letter of each word*/
+.capitalize{
+    text-transform: capitalize;
+}
+
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.line-throw{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.overline{
+    text-decoration: overline;
+}
+.no-underline{
+    text-decoration: none;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.extra-light, .fw-200, .font-weight-200{
+    font-weight: 200;
+}
+.light, .fw-300, .font-weight-300{
+    font-weight: 300;
+}
+.regular, .fw-400, .font-weight-400{
+    font-weight: 400;
+}
+.semi-bold, .fw-600, .font-weight-600{
+    font-weight: 600;
+}
+.bold, .strong, .fw-700, .font-weight-700{
+    font-weight: 700;
+}
+.black, .fw-900, .font-weight-900{
+    font-weight: 900;
+}

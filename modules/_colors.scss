@@ -1,0 +1,65 @@
+
+.bg-default{
+    background-color: var(--color-canvas-default);
+}
+
+.bg-subtle{
+    background-color: var(--color-canvas-subtle);
+}
+
+.bg-inset{
+    background-color: var(--color-canvas-inset);
+}
+
+.fg-default{
+    color: var(--color-fg-default);
+}
+.fg-subtle{
+    color: var(--color-fg-subtle);
+}
+.fg-muted{
+    color: var(--color-fg-muted);
+}
+.fg-on-emphasis{
+    color: var(--color-fg-on-emphasis);
+}
+
+
+.border-default{
+    border-color: var(--color-border-default);
+}
+.border-muted{
+    border-color: var(--color-border-muted);
+}
+.border-subtle{
+    border-color: var(--color-border-subtle);
+}
+
+
+.accent-fg{
+    color: var(--color-accent-fg);
+}
+.accent-bg{
+    background-color: var(--color-accent-fg);
+}
+
+.accent-emphasis-fg{
+    color: var(--color-accent-emphasis);
+}
+.accent-emphasis-bg{
+    background-color: var(--color-accent-emphasis);
+}
+
+.accent-muted-fg{
+    color: var(--color-accent-muted);
+}
+.accent-muted-bg{
+    background-color: var(--color-accent-muted);
+}
+
+.accent-subtle-fg{
+    color: var(--color-accent-subtle);
+}
+.accent-subtle-bg{
+    background-color: var(--color-accent-subtle);
+}

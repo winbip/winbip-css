@@ -1,0 +1,26 @@
+.d-grid{
+    display: grid;
+    gap:1rem;
+    &.gc-2, &.g-col-2{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows:auto;
+    }
+    &.gc-3, &.g-col-3{
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows:auto;
+        .g-span-2{
+            grid-column:2/3;
+        }
+        .g-span-3{
+            grid-column:3/3;
+        }
+    }
+    &.gc-4, &.g-col-4{
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows:auto;
+    }
+    &.gc-5, &.g-col-5{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows:auto;
+    }
+}
