@@ -1,0 +1,39 @@
+:root {
+          
+     /* --color: #3d4e5e; main foreground color
+        --color-2: #3d444d; 
+    */
+
+    /* Default Background color */
+    --dafault-background-color: #1c2128;
+    --default-forground-color: #adbac7;
+    --default-border-color: #444c56;
+
+    --dimmed-background-color: #1c2128;
+    --dimmed-forground-color: #adbac7;
+    --dimmed-border-color: #444c56;
+
+
+
+    --color-canvas-default: #22272e;  
+    --color-canvas-overlay: #2d333b;   
+    --color-canvas-inset: #1c2128;
+    --color-canvas-subtle: #2d333b; 
+
+    --color-fg-default: #adbac7;  
+    --color-fg-muted: #768390;  
+    --color-fg-subtle: #545d68;
+    --color-fg-on-emphasis: #cdd9e5;
+
+    --color-border-default: #444c56; 
+    --color-border-muted: #373e47; 
+    --color-border-subtle: rgba(205,217,229,0.1);
+
+    --accent-color: #316dca;
+    --color-accent-fg: #539bf5;
+    --color-accent-emphasis: #316dca;
+    --color-accent-muted: rgba(65,132,228,0.4);
+    --color-accent-subtle: rgba(65,132,228,0.15);
+
+    --form-accent-color: rgb(12, 216, 12);
+}
