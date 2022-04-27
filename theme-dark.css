@@ -1,21 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 :root {
-          
-     /* --color: #3d4e5e; main foreground color
-        --color-2: #3d444d; 
-    */
+    --brand-color: #FFF;
+    --accent-color: #316dca;
+    --form-accent-color: rgb(12, 216, 12);
+
+    --default-hyperlink-color: #539bf5;
 
     /* Default Background color */
     --dafault-background-color: #1c2128;
-    --default-forground-color: #adbac7;
+    --default-foreground-color: #adbac7;
     --default-border-color: #444c56;
 
-    --dimmed-background-color: #1c2128;
-    --dimmed-forground-color: #adbac7;
-    --dimmed-border-color: #444c56;
+    --muted-background-color: #1c2128;
+    --muted-foreground-color: #adbac7;
+    --muted-border-color: #444c56;
 
 
+    --font-family: 'Source Sans Pro', sans-serif;
+    --root-font-size: 16px;
+    --body-font-size: 1rem;
+    --font-weight: 400;
+    --line-height-lg: 1.5;
+    --line-height-sm: 1.15;
+    
+    --border-radius-lg: 0.4rem;
+    --border-radius-sm: 0.4rem;
 
-    --color-canvas-default: #22272e;  
+
+    /* --color-canvas-default: #22272e;  
     --color-canvas-overlay: #2d333b;   
     --color-canvas-inset: #1c2128;
     --color-canvas-subtle: #2d333b; 
@@ -36,4 +50,6 @@
     --color-accent-subtle: rgba(65,132,228,0.15);
 
     --form-accent-color: rgb(12, 216, 12);
+    --blue-color: #539bf5;
+    --brand-color: #FFF; */
 }

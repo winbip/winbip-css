@@ -4,7 +4,7 @@ header{
     .brand-container{
         padding-top:0.9rem;
         padding-bottom:0.9rem;
-        background-color: var(--color-canvas-subtle);
+        // background-color: var(--muted-background-color);
 
         .brand{
             display: flex; 
@@ -73,13 +73,13 @@ header{
             }
 
             &>a{
-                color: var(--color-fg-default);
+                color: var(--default-hyperlink-color);
                 font-size: 0.945rem;
                 display: flex;
                 text-decoration: none;
                 margin-bottom: 0.4345rem;
                 padding-bottom: 0.4345rem;
-                border-bottom: 1px solid var(--color-border-muted);
+                border-bottom: 1px solid var(--default-border-color);
                 &:last-child{
                     border-bottom: 0;
                     padding-bottom: 20px;
@@ -101,8 +101,8 @@ header{
                 }
 
                 &:hover{
-                    border-bottom: 1px solid var(--color-accent-fg);
-                    color: var(--color-accent-fg);
+                    border-bottom: 1px solid var(--default-border-color);
+                    color: var(--default-foreground-color);
                 }
             }
         }
