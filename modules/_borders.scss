@@ -1,4 +1,5 @@
 .border{
+    /* border-width setting ------------>*/ 
     border-width: 1px;
 
     &.top{
@@ -25,6 +26,7 @@
         border-left-width: 0 !important;
         border-right-width: 1px !important;
     }
+    /* <------------ border-width setting*/ 
 
     border-style: solid;
     &.dash{
@@ -35,6 +37,6 @@
     }
 
     &.rounded{
-        border-radius: var(--border-radius-main);
+        border-radius: var(--default-border-radius);
     }
 }

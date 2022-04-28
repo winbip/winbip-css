@@ -5,7 +5,6 @@
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: inherit;
 }
 
 .h1, h1 {
@@ -32,6 +31,9 @@
     font-size: 1rem;
 }
 
+p, .p{
+    font-size: 1rem;
+}
 /* Makes text upper case*/
 .ucase{
     text-transform: uppercase;
