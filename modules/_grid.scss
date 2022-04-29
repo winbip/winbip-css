@@ -1,26 +1,60 @@
-.d-grid{
+//https://learncssgrid.com/
+
+[class^="grid-"] {
     display: grid;
-    gap:1rem;
-    &.gc-2, &.g-col-2{
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows:auto;
+    gap: 0.5rem;
+
+    //select all child elements
+    &>*{
+        border:1px solid red;
     }
-    &.gc-3, &.g-col-3{
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows:auto;
-        .g-span-2{
-            grid-column:2/3;
+}
+
+/*
+Create 1 to 12 grid as below
+    .grid-4{
+        grid-template-columns: repeat(4, 1fr);
+    }
+*/
+@for $i from 1 through 12 {
+    .grid-#{$i} {
+        grid-template-columns: repeat(#{$i}, 1fr);
+    }
+}
+
+//.fr-auto stacks all children vertically on mobile and horizontally on large. 
+//if used this class, no need to apply any rule for child for small/large screen.
+//Example: <div class="grid-4 fr-auto"> .... </div>
+.fr-auto{
+    @include sm(){
+        grid-template-columns: 1fr;
+    }
+}
+
+@include small(){
+    /*
+        //Creates 
+        .fr2-sm{
+            grid-column-end: span 2;
         }
-        .g-span-3{
-            grid-column:3/3;
+    */ 
+    @for $i from 1 through 12 {
+        .fr#{$i}-sm {
+            grid-column-end: span #{$i};      
         }
     }
-    &.gc-4, &.g-col-4{
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows:auto;
-    }
-    &.gc-5, &.g-col-5{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-        grid-template-rows:auto;
+}
+
+@include large(){
+      /*
+        //Creates 
+        .fr2-lg{
+            grid-column-end: span 2;
+        }
+    */ 
+    @for $i from 1 through 12 {
+        .fr#{$i}-lg {
+            grid-column-end: span #{$i};      
+        }
     }
 }
