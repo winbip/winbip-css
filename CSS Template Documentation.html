@@ -39,6 +39,14 @@
         .grid-item{
             background-color: burlywood;
         }
+
+        .inline-code {
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    padding: 0 5px;
+    color: black;
+    background: gray;
+}
     </style>
 </head>
 <body>
@@ -134,12 +142,60 @@
                                 border:1px solid red;
                             }
                         </style>
+                        <h2>Grid</h2>
+                        <p>
+                            .grid-n. n equals to any number number between 1 to 12.
+                            For example- .grid-7 creates a grid consists of seven columns per row.   
+                        </p>
+                        <h3>Classes for grid container</h3>
+                        <h4>.fr-auto</h4>
+                        <p>
+                            <span class="inline-code">.fr-auto</span> stacks all children vertically on mobile and horizontally on large. 
+if used this class, no need to apply any rule for child for small/large screen.
+Example: <span class="inline-code">grid-4 fr-auto</span>
+
+                        </p>
+                        <h3>Classes for grid items</h3>
+                        <p>
+                            .fr2-sm spans a grid child 2 columns on mobile.
+                            Others similar classes - .fr3-sm, upto .fr12-sm
+                        </p>
+                        <p>
+                            .fr2-lg spans a grid child 2 columns on desktop.
+                            Others similar classes - .fr3-lg, upto .fr12-lg
+                        </p>
 
                         <div class="grid-12">
-                            <div class="fr12-lg fr12-sm">1</div>
-                            <div class="fr12-lg">4</div>
+                            <div class="">1</div>
+                            <div class="">2</div>
+                            <div class="gc-start-4 gc-8">3</div>
+                            <div>4 <br> 4 <br> 4</div>
+                            <div class="">5</div>                            
+                            <div class="">6</div>                            
+                            <div class="">7</div>                            
+                            <div class="">8</div>                            
+                            <div class="">9</div>                            
+                            <div class="">10</div>                            
+                            <div class="">11</div>                            
+                            <div class="">12</div>                            
+
+                        </div>
+
+                        <br>
+                        <div class="grid-12">
+                            <div class="">1</div>
+                            <div class="">2</div>
                             <div class="">3</div>
-                            <div>4 <br> 4 <br> 5</div>
+                            <div>4 <br> 4 <br> 4</div>
+                            <div class="">5</div>                            
+                            <div class="">6</div>                            
+                            <div class="">7</div>                            
+                            <div class="">8</div>                            
+                            <div class="">9</div>                            
+                            <div class="">10</div>                            
+                            <div class="">11</div>                            
+                            <div class="">12</div>                            
+
                         </div>
 
                         <h3>Colors</h3>

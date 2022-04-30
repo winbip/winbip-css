@@ -2,7 +2,7 @@
 
 [class^="grid-"] {
     display: grid;
-    gap: 0.5rem;
+    // gap: 0.5rem;
 
     //select all child elements
     &>*{
@@ -31,30 +31,51 @@ Create 1 to 12 grid as below
     }
 }
 
+@for $i from 1 through 12 {
+    .gc-start-#{$i}, .fr-start-#{$i}{
+        grid-column-start: #{$i};
+    }
+
+    .gc-end-#{$i}, .fr-end-#{$i}{
+        grid-column-end: #{$i+1};
+    }
+
+    .gc-span-#{$i}, .fr-span-#{$i}, .gc-#{$i}, .fr-#{$i}{
+        grid-column-end: span #{$i};
+    }
+}
+
 @include small(){
-    /*
-        //Creates 
-        .fr2-sm{
-            grid-column-end: span 2;
-        }
-    */ 
     @for $i from 1 through 12 {
-        .fr#{$i}-sm {
-            grid-column-end: span #{$i};      
+        .gc-start-#{$i}-sm, .fr-start-#{$i}-sm{
+            grid-column-start: #{$i};
+        }
+
+        .gc-end-#{$i}-sm, .fr-end-#{$i}-sm{
+            grid-column-end: #{$i+1};
+        }
+
+        .gc-span-#{$i}-sm, .fr-span-#{$i}-sm, .gc-#{$i}-sm, .fr-#{$i}-sm{
+            grid-column-end: span #{$i};
         }
     }
 }
 
 @include large(){
-      /*
-        //Creates 
-        .fr2-lg{
-            grid-column-end: span 2;
-        }
-    */ 
     @for $i from 1 through 12 {
-        .fr#{$i}-lg {
-            grid-column-end: span #{$i};      
+        .gc-start-#{$i}-lg, .fr-start-#{$i}-lg{
+            grid-column-start: #{$i};
+        }
+
+        .gc-end-#{$i}-lg, .fr-end-#{$i}-lg{
+            grid-column-end: #{$i+1};
+        }
+
+        .gc-span-#{$i}-lg, .fr-span-#{$i}-lg, .gc-#{$i}-lg, .fr-#{$i}-lg{
+            grid-column-end: span #{$i};
         }
     }
 }
+
+
+
