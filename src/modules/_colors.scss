@@ -1,0 +1,36 @@
+
+    .bg-brand{
+        background-color: var(--brand-color);
+    }
+
+    .fg-brand{
+        color: var(--brand-color);
+    }
+
+    .bc-brand{
+        border-color: var(--brand-color);
+    }
+
+    .link-color{
+        color: var(--default-hyperlink-color);
+    }
+
+    .bg-default{
+        background-color: var(--dafault-background-color);
+    }
+    .fg-default{
+        color: var(--default-foreground-color);
+    }
+    .bc-default{
+        border-color: var(--default-border-color);
+    }
+
+    .bg-muted{
+        background-color: var(--muted-background-color);
+    }
+    .fg-muted{
+        color: var(--muted-foreground-color);
+    }
+    .bc-muted{
+        border-color: var(--muted-border-color);
+    }

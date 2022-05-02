@@ -1,0 +1,44 @@
+//Class-
+.width-100{
+    width:100% !important;
+}
+.width-full{
+    width:100% !important;
+}
+
+.width-fit-content{
+    width: -moz-fit-content;
+    width: fit-content !important;
+}
+
+.width-min-content{
+    width: min-content !important;
+}
+
+.width-max-content{
+    width: max-content !important;
+}
+
+// @for $i from 1 through 12 {
+//     .width-#{$i} {
+//         width: #{$i*8.333333333333333}#{"%"};
+//       }
+// }
+
+
+// @include lg {  
+//     @for $i from 1 through 12 {
+//         .lg-width-#{$i} {
+//             width: #{$i*8.333333333333333}#{"%"};
+//         }
+//     }
+// }
+
+
+// @include sm {  
+//     @for $i from 1 through 12 {
+//         .sm-width-#{$i} {
+//             width: #{$i*8.333333333333333}#{"%"};
+//         }
+//     }
+// }
