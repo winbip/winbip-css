@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Theme</title>
 
-    
-    <link rel="stylesheet" href="theme-dark.css">
-    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/skpaul/monogrid@0.0.1/monogrid.min.css">
+    <link rel="stylesheet" href="../theme-dark.css">
+    <link rel="stylesheet" href="../winbip.min.css">
 
     <style>
 
@@ -86,17 +86,7 @@
             </div>
         </header>
         <main class="">
-            <!-- <div class="container">
-                <div class="grid">
-                    <div class="grid-item">alsdfj <br> asldf</div>
-                    <div class="grid-item">alsdfj <br> asldf</div>
-                    <div class="grid-item">alsdfj</div>
-                    <div class="grid-item">alsdfj</div>
-                    <div class="grid-item">alsdfj <br> asldf <br> asljsdlafj<br> asljsdlafj<br> asljsdlafj<br> asljsdlafj<br> asljsdlafj</div>
-                 
-                </div>
-            </div> -->
-
+          
             <div class="container-fluid d-flex flex-wrap">
 
                 <h1 style="width:100%;" class="mt-150 accent-fg">Page Heading
@@ -137,98 +127,45 @@
                     </nav>
 
                     <div class="content">
-                        <style>
-                            .test{
-                                border:1px solid red;
-                            }
-                        </style>
-                        <h2>Grid</h2>
-                        <p>
-                            .grid-n. n equals to any number number between 1 to 12.
-                            For example- .grid-7 creates a grid consists of seven columns per row.   
-                        </p>
-                        <h3>Classes for grid container</h3>
-                        <h4>.fr-auto</h4>
-                        <p>
-                            <span class="inline-code">.fr-auto</span> stacks all children vertically on mobile and horizontally on large. 
-if used this class, no need to apply any rule for child for small/large screen.
-Example: <span class="inline-code">grid-4 fr-auto</span>
-
-                        </p>
-                        <h3>Classes for grid items</h3>
-                        <p>
-                            .fr2-sm spans a grid child 2 columns on mobile.
-                            Others similar classes - .fr3-sm, upto .fr12-sm
-                        </p>
-                        <p>
-                            .fr2-lg spans a grid child 2 columns on desktop.
-                            Others similar classes - .fr3-lg, upto .fr12-lg
-                        </p>
-
-                        <div class="grid-12">
-                            <div class="">1</div>
-                            <div class="">2</div>
-                            <div class="gc-start-4 gc-8">3</div>
-                            <div>4 <br> 4 <br> 4</div>
-                            <div class="">5</div>                            
-                            <div class="">6</div>                            
-                            <div class="">7</div>                            
-                            <div class="">8</div>                            
-                            <div class="">9</div>                            
-                            <div class="">10</div>                            
-                            <div class="">11</div>                            
-                            <div class="">12</div>                            
-
-                        </div>
-
-                        <br>
-                        <div class="grid-12">
-                            <div class="">1</div>
-                            <div class="">2</div>
-                            <div class="">3</div>
-                            <div>4 <br> 4 <br> 4</div>
-                            <div class="">5</div>                            
-                            <div class="">6</div>                            
-                            <div class="">7</div>                            
-                            <div class="">8</div>                            
-                            <div class="">9</div>                            
-                            <div class="">10</div>                            
-                            <div class="">11</div>                            
-                            <div class="">12</div>                            
-
-                        </div>
 
                         <h3>Colors</h3>
-                            <h4>Text in brand color</h4>
-                            <p class="fg-brand">.fg-brand</p>
-                            <h4>Background in brand color</h4>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-300 bg-default">.bg-default</div>
-                            <div class="border border-muted rounded p-300 bg-subtle">.bg-subtle</div>
-                            <div class="border border-muted rounded p-300 bg-inset">.bg-inset</div>
-                            <div class="border border-muted rounded p-300 fg-default">.fg-default</div>
-                            <div class="border border-muted rounded p-300 fg-subtle">.fg-subtle</div>
-                            <div class="border border-muted rounded p-300 fg-muted">.fg-muted</div>
-                            <div class="border border-muted rounded p-300 fg-on-emphasis">.fg-on-emphasis</div>
-                            <div class="border border-muted rounded p-300 accent-fg">.accent-fg <br> .accent-bg </div>
-                            <div class="border border-muted rounded p-300 accent-emphasis-fg">.accent-emphasis-fg <br> .accent-emphasis-bg</div>
-                            <div class="border border-muted rounded p-300 accent-muted-fg">.accent-muted-fg <br> .accent-muted-bg</div>
-                            <div class="border border-muted rounded p-300 accent-subtle-fg bg-subtle">.accent-subtle-fg <br> .accent-subtle-bg</div>
-                            <div class="border border-default rounded p-300 fg-default">.border-default</div>
-                            <div class="border border-muted rounded p-300 fg-default">.border-default</div>
-                            <div class="border border-subtle rounded p-300 fg-default">.border-subtle</div>
-                        </div>
+                          
+                            <h4>Background colors</h4>
+                            <div class="grid fr3">
+                                <div class="border border-muted rounded p-300 .bg-default">.bg-default</div>
+                                <div class="border border-muted rounded p-300 bg-brand">.bg-brand</div>
+                                <div class="border border-muted rounded p-300 bg-muted">.bg-muted</div>
+                            </div>
+                            <br>
+                            <h4>Foreground colors</h4>
+                            <div class="grid fr3">
+                                <div class="border border-muted rounded p-300 fg-default">.fg-default</div>
+                                <div class="border border-muted rounded p-300 fg-brand">.fg-brand</div>
+                                <div class="border border-muted rounded p-300 fg-muted">.fg-muted</div>
+                            </div>
+                            <br>
+                            <h4>Border colors</h4>
+                            <div class="grid fr3">
+                                <div class="border border-muted rounded p-300 bc-default">.fg-default</div>
+                                <div class="border border-muted rounded p-300 bc-brand">.fg-brand</div>
+                                <div class="border border-muted rounded p-300 bc-muted">.fg-muted</div>
+                            </div>
+                            <br>
+                      
                         <div class="divider"></div>
 
                         <h3>Borders</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 bg-default">.border  all border</div>
-                            <div class="border top border-muted rounded p-150 bg-default">.border .top top border</div>
-                            <div class="border bottom border-muted rounded p-150 bg-default">.border .bottom bottom border</div>
-                            <div class="border left border-muted rounded p-150 bg-default">.border .left left border</div>
-                            <div class="border right border-muted rounded p-150 bg-default">.border .right right border</div>
+                        <div class="grid auto">
+                            <div class="border p-150 bg-default">.border  all border</div>
+                            <div class="border rounded p-150 bg-default">.border .rounded</div>
+                            <div class="border top p-150 bg-default">.border .top</div>
+                            <div class="border bottom p-150 bg-default">.border .bottom</div>
+                            <div class="border left p-150 bg-default">.border .left</div>
+                            <div class="border right p-150 bg-default">.border .right</div>
+                            <div class="border dash p-150 bg-default">.border .dash</div>
+                            <div class="border dot p-150 bg-default">.border .dot</div>
                         </div>
+                        <br>
                         <div class="divider"></div>
 
 
@@ -238,22 +175,16 @@ Example: <span class="inline-code">grid-4 fr-auto</span>
                             <div class="border border-muted rounded p-150 ">.offset-sm-1 to .offset-sm-12</div>
                             <div class="border border-muted rounded p-150 ">.offset-lg-1 to .offset-lg-12</div>
                         </div>
+                        <br>
                         <div class="divider"></div>
                         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
                             <div class="border border-muted rounded p-150 ">.offset-1 to .offset-12</div>
                             <div class="border border-muted rounded p-150 ">.col-sm-1 to .col-sm-12</div>
                             <div class="border border-muted rounded p-150 ">.col-lg, .col-lg-auto, .col-lg-1 to .col-lg-12</div>
                         </div>
-                        <div class="divider accent-muted-bg"></div>
-
-                        <h4>CSS Grid</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.d-grid  Display grid</div>
-                            <div class="border border-muted rounded p-150 ">.gc-2  to .gc-5  Grid template columns 1 - 5</div>
-                            <div class="border border-muted rounded p-150 ">.g-col-2  to .g-col-5  Grid template columns 1 - 5</div>
-                        </div>
+                        <br>
                         <div class="divider"></div>
-
+                       
                         <h3>Cards</h3>
                         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
                             

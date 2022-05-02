@@ -14,9 +14,9 @@
     --default-foreground-color: #adbac7;
     --default-border-color: #444c56;
 
-    --muted-background-color: #1c2128;
-    --muted-foreground-color: #adbac7;
-    --muted-border-color: #444c56;
+    --muted-background-color: #22272E;
+    --muted-foreground-color: #768390;
+    --muted-border-color: #373e47;
 
     --default-font-family: 'Source Sans Pro', sans-serif;
     --root-font-size: 100%;   /* Used for <html></html> element */
