@@ -20,17 +20,11 @@
     }
 }
 
-// @include create-margin(margin-all, margin);         //will create .margin-all-1 {margin:2px;}
-// @include create-margin(margin-left, margin-left);   //will create .margin-left-1 {margin-left:2px;}
-// @include create-margin(margin-right, margin-right);
-// @include create-margin(margin-top, margin-top);
-// @include create-margin(margin-bottom, margin-bottom);
 
 @mixin create-margin($prefix:"", $property:"") {
-    .#{$prefix}-auto {
+    .#{$prefix}auto {
         #{$property}: auto !important;
     }
-
     .#{$prefix}0 {
         #{$property}: 0 !important;
     }
@@ -42,9 +36,17 @@
     .#{$prefix}050 {
         #{$property}: 0.5rem !important;
     }
+
+    .#{$prefix}075 {
+        #{$property}: 0.75rem !important;
+    }
   
     .#{$prefix}100 {
         #{$property}: 1rem !important;
+    }
+
+    .#{$prefix}125 {
+        #{$property}: 1.25rem !important;
     }
   
     .#{$prefix}150 {
@@ -56,7 +58,7 @@
     }
     
     @include small{
-        .#{$prefix}-auto-sm {
+        .#{$prefix}auto-sm {
             #{$property}: auto !important;
         }
     
@@ -123,9 +125,120 @@
 @include create-margin("ml", "margin-left"); 
 @include create-margin("mr", "margin-right"); 
 
+ 
+@mixin create-double-margin($prefix:"", $property1:"", $property2:"") {
+    .#{$prefix}auto {
+        #{$property1}: auto !important;
+        #{$property2}: auto !important;
+    }
+    .#{$prefix}0 {
+        #{$property1}: 0 !important;
+        #{$property2}: 0 !important;
+    }
   
+    .#{$prefix}025 {
+        #{$property1}: 0.25rem !important;
+        #{$property2}: 0.25rem !important;
+    }
+  
+    .#{$prefix}050 {
+        #{$property1}: 0.5rem !important;
+        #{$property2}: 0.5rem !important;
+    }
+  
+    .#{$prefix}100 {
+        #{$property1}: 1rem !important;
+        #{$property2}: 1rem !important;
+    }
+  
+    .#{$prefix}150 {
+        #{$property1}: 1.5rem !important;
+        #{$property2}: 1.5rem !important;
+    }
+  
+    .#{$prefix}300 {
+        #{$property1}: 3rem !important;
+        #{$property2}: 3rem !important;
+    }
+    
+    @include small{
+        .#{$prefix}auto-sm {
+            #{$property1}: auto !important;
+            #{$property2}: auto !important;
+        }
+    
+        .#{$prefix}0-sm {
+            #{$property1}: 0 !important;
+            #{$property2}: 0 !important;
+        }
+      
+        .#{$prefix}025-sm {
+            #{$property1}: 0.25rem !important;
+            #{$property2}: 0.25rem !important;
+        }
+      
+        .#{$prefix}050-sm {
+            #{$property1}: 0.5rem !important;
+            #{$property2}: 0.5rem !important;
+        }
+      
+        .#{$prefix}100-sm {
+            #{$property1}: 1rem !important;
+            #{$property2}: 1rem !important;
+        }
+      
+        .#{$prefix}150-sm {
+            #{$property1}: 1.5rem !important;
+            #{$property2}: 1.5rem !important;
+        }
+      
+        .#{$prefix}300-sm {
+            #{$property1}: 3rem !important;
+            #{$property2}: 3rem !important;
+        }
+    }
+
+    @include large{
+        .#{$prefix}auto-lg {
+            #{$property1}: auto !important;
+            #{$property2}: auto !important;
+        }
+    
+        .#{$prefix}0-lg {
+            #{$property1}: 0 !important;
+            #{$property2}: 0 !important;
+        }
+      
+        .#{$prefix}025-lg {
+            #{$property1}: 0.25rem !important;
+            #{$property2}: 0.25rem !important;
+        }
+      
+        .#{$prefix}050-lg {
+            #{$property1}: 0.5rem !important;
+            #{$property2}: 0.5rem !important;
+        }
+      
+        .#{$prefix}100-lg {
+            #{$property1}: 1rem !important;
+            #{$property2}: 1rem !important;
+        }
+      
+        .#{$prefix}150-lg {
+            #{$property1}: 1.5rem !important;
+            #{$property2}: 1.5rem !important;
+        }
+      
+        .#{$prefix}300-lg {
+            #{$property1}: 3rem !important;
+            #{$property2}: 3rem !important;
+        }
+    }
+}
 
 
+@include create-double-margin("mv", "margin-top","margin-bottom"); 
+@include create-double-margin("mh", "margin-left","margin-right"); 
 
 
 

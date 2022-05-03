@@ -1,22 +1,56 @@
-//Class-
-.width-100{
-    width:100% !important;
-}
-.width-full{
-    width:100% !important;
+
+.fullwidth{
+    width:100% !important; 
 }
 
-.width-fit-content{
+.fitcontent{
     width: -moz-fit-content;
     width: fit-content !important;
 }
 
-.width-min-content{
+.mincontent{
     width: min-content !important;
 }
 
-.width-max-content{
+.maxcontent{
     width: max-content !important;
+}
+
+@include small(){
+    .fullwidth-sm{
+        width:100% !important; 
+    }
+    
+    .fitcontent-sm{
+        width: -moz-fit-content;
+        width: fit-content !important;
+    }
+    
+    .mincontent-sm{
+        width: min-content !important;
+    }
+    
+    .maxcontent-sm{
+        width: max-content !important;
+    }
+}
+@include large(){
+    .fullwidth-lg{
+        width:100% !important; 
+    }
+    
+    .fitcontent-lg{
+        width: -moz-fit-content;
+        width: fit-content !important;
+    }
+    
+    .mincontent-lg{
+        width: min-content !important;
+    }
+    
+    .maxcontent-lg{
+        width: max-content !important;
+    }
 }
 
 // @for $i from 1 through 12 {
