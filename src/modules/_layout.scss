@@ -32,7 +32,7 @@ html, body {
     width: 100%;
     min-height: 100%;
     /*Custom properties with fallbacks for use when the property has not been set*/
-    background-color: var(--dafault-background-color, #FFFFFF);  
+    background-color: var(--dafault-background, #FFFFFF);  
 }
 
 
@@ -44,7 +44,7 @@ body{
     @include large{
         line-height: var(--line-height-lg);
     }
-    color: var(--default-foreground-color);
+    color: var(--default-foreground);
 }
 
 /* ---------------------------------------------------------------> */

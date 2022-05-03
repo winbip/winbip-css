@@ -10,13 +10,13 @@
     --default-hyperlink-color: #539bf5;
 
     /* Default Background color */
-    --dafault-background-color: #1c2128;
-    --default-foreground-color: #adbac7;
-    --default-border-color: #444c56;
+    --dafault-background: #1c2128;
+    --default-foreground: #adbac7;
+    --default-border: #444c56;
 
-    --muted-background-color: #22272E;
-    --muted-foreground-color: #768390;
-    --muted-border-color: #373e47;
+    --muted-background: #22272E;
+    --muted-foregroundr: #768390;
+    --muted-border: #373e47;
 
     --default-font-family: 'Source Sans Pro', sans-serif;
     --root-font-size: 100%;   /* Used for <html></html> element */
@@ -28,7 +28,7 @@
     --line-height-lg: 1.5;
     --line-height-sm: 1.15;
     
-    --default-border-radius: 0.4rem;
+    --default-radius: 0.25rem;
 
     /* --color-canvas-default: #22272e;  
     --color-canvas-overlay: #2d333b;   

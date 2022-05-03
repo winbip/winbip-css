@@ -16,21 +16,21 @@
     }
 
     .bg-default{
-        background-color: var(--dafault-background-color);
+        background-color: var(--dafault-background);
     }
     .fg-default{
-        color: var(--default-foreground-color);
+        color: var(--default-foreground);
     }
     .bc-default{
-        border-color: var(--default-border-color);
+        border-color: var(--default-border);
     }
 
     .bg-muted{
-        background-color: var(--muted-background-color);
+        background-color: var(--muted-background);
     }
     .fg-muted{
-        color: var(--muted-foreground-color);
+        color: var(--muted-foreground);
     }
     .bc-muted{
-        border-color: var(--muted-border-color);
+        border-color: var(--muted-border);
     }

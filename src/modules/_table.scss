@@ -1,6 +1,6 @@
 table{
-    border:1px solid var(--muted-border-color);
-    border-radius: var(--border-radius-main);
+    border:1px solid var(--muted-border);
+    border-radius: var(--default-radius);
     border-spacing: 0;
     overflow: hidden;
     font-size: 0.9rem;
@@ -8,31 +8,31 @@ table{
         width: 100%;
     }
     thead{
-        background-color: var(--muted-background-color);
-        color: var(--color-fg-default);
+        background-color: var(--muted-background);
+        color: var(--default-foreground);
         text-align: center;
         tr{
             th{
                 font-weight: 600;
                 padding: 0.2345rem;
-                border-bottom: 2px solid var(--color-border-muted);
+                border-bottom: 2px solid var(--muted-border);
             }
 
             th:not(:first-child){
-                border-left: 1px solid var(--color-border-muted);
+                border-left: 1px solid var(--muted-border);
             }
         }
     }
 
     tbody{
-        color: var(--color-fg-default);
+        color: var(--default-foreground);
         tr{
             td{
                 padding: 0.5rem 1rem;
             }
 
             &:not(:last-child)>td{
-                border-bottom: 1px solid var(--color-border-muted);
+                border-bottom: 1px solid var(--muted-border);
             }
 
            &:nth-child(even){
@@ -41,7 +41,7 @@ table{
 
             &:hover{
                 td{
-                    background-color: var(--color-canvas-subtle);
+                    background-color: var(--muted-background);
                 }
             } 
         }

@@ -25,28 +25,21 @@
         } */
 
         .grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        grid-auto-rows: 1fr;
-    }
+            gap:2.5rem;
+        }
 
-        @media only screen and (min-width: 992px) {
-            .grid{
-                grid-template-columns: 1fr 1fr 1fr;
-            }
+        .grid>*{
+            padding:20px;
         }
-        .grid-item{
-            background-color: burlywood;
-        }
+
 
         .inline-code {
-    border: 1px solid lightgray;
-    border-radius: 0.2rem;
-    padding: 0 5px;
-    color: black;
-    background: gray;
-}
+            border: 1px solid lightgray;
+            border-radius: 0.2rem;
+            padding: 0 5px;
+            color: black;
+            background: gray;
+        }
     </style>
 </head>
 <body>
@@ -132,38 +125,38 @@
                           
                             <h4>Background colors</h4>
                             <div class="grid fr3">
-                                <div class="border border-muted rounded p-300 .bg-default">.bg-default</div>
-                                <div class="border border-muted rounded p-300 bg-brand">.bg-brand</div>
-                                <div class="border border-muted rounded p-300 bg-muted">.bg-muted</div>
+                                <div class="border bc-muted bg-brand">.bg-brand</div>
+                                <div class="border bc-muted bg-default">.bg-default</div>
+                                <div class="border bc-muted bg-muted">.bg-muted</div>
                             </div>
                             <br>
                             <h4>Foreground colors</h4>
                             <div class="grid fr3">
-                                <div class="border border-muted rounded p-300 fg-default">.fg-default</div>
-                                <div class="border border-muted rounded p-300 fg-brand">.fg-brand</div>
-                                <div class="border border-muted rounded p-300 fg-muted">.fg-muted</div>
+                                <div class="border bc-muted round fg-default">.fg-default</div>
+                                <div class="border bc-muted round fg-brand">.fg-brand</div>
+                                <div class="border bc-muted round fg-muted">.fg-muted</div>
                             </div>
                             <br>
                             <h4>Border colors</h4>
                             <div class="grid fr3">
-                                <div class="border border-muted rounded p-300 bc-default">.fg-default</div>
-                                <div class="border border-muted rounded p-300 bc-brand">.fg-brand</div>
-                                <div class="border border-muted rounded p-300 bc-muted">.fg-muted</div>
+                                <div class="border round bc-default">.bc-default</div>
+                                <div class="border round bc-brand">.bc-brand</div>
+                                <div class="border round bc-muted">.bc-muted</div>
                             </div>
                             <br>
                       
                         <div class="divider"></div>
 
                         <h3>Borders</h3>
-                        <div class="grid auto">
-                            <div class="border p-150 bg-default">.border  all border</div>
-                            <div class="border rounded p-150 bg-default">.border .rounded</div>
-                            <div class="border top p-150 bg-default">.border .top</div>
-                            <div class="border bottom p-150 bg-default">.border .bottom</div>
-                            <div class="border left p-150 bg-default">.border .left</div>
-                            <div class="border right p-150 bg-default">.border .right</div>
-                            <div class="border dash p-150 bg-default">.border .dash</div>
-                            <div class="border dot p-150 bg-default">.border .dot</div>
+                        <div class="grid fr4" style="gap:2rem;">
+                            <div class="border ">.border  all border</div>
+                            <div class="border round ">.border .round</div>
+                            <div class="border top ">.border .top</div>
+                            <div class="border bottom ">.border .bottom</div>
+                            <div class="border left ">.border .left</div>
+                            <div class="border right ">.border .right</div>
+                            <div class="border dash ">.border .dash</div>
+                            <div class="border dot ">.border .dot</div>
                         </div>
                         <br>
                         <div class="divider"></div>
@@ -171,16 +164,16 @@
 
                         <h4>Bootstrap Grid (customized)</h4>
                         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.col, .col-auto, .col-1 to .col-12</div>
-                            <div class="border border-muted rounded p-150 ">.offset-sm-1 to .offset-sm-12</div>
-                            <div class="border border-muted rounded p-150 ">.offset-lg-1 to .offset-lg-12</div>
+                            <div class="border bc-muted round p-150 ">.col, .col-auto, .col-1 to .col-12</div>
+                            <div class="border bc-muted round p-150 ">.offset-sm-1 to .offset-sm-12</div>
+                            <div class="border bc-muted round p-150 ">.offset-lg-1 to .offset-lg-12</div>
                         </div>
                         <br>
                         <div class="divider"></div>
                         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.offset-1 to .offset-12</div>
-                            <div class="border border-muted rounded p-150 ">.col-sm-1 to .col-sm-12</div>
-                            <div class="border border-muted rounded p-150 ">.col-lg, .col-lg-auto, .col-lg-1 to .col-lg-12</div>
+                            <div class="border bc-muted round p-150 ">.offset-1 to .offset-12</div>
+                            <div class="border bc-muted round p-150 ">.col-sm-1 to .col-sm-12</div>
+                            <div class="border bc-muted round p-150 ">.col-lg, .col-lg-auto, .col-lg-1 to .col-lg-12</div>
                         </div>
                         <br>
                         <div class="divider"></div>
@@ -210,7 +203,7 @@
 
                         <h3>Divider</h3>
                         <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 bg-default">
+                            <div class="border bc-muted round p-150 bg-default">
                                 .divider
                                 <div class="divider"></div>
                             </div>
@@ -219,161 +212,152 @@
 
                         <h3>Icons</h3>
                         <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 bg-default">
+                            <div class="border bc-muted round p-150 bg-default">
                                 https://fonts.google.com/icons
                             </div>
                         </div>
                         <div class="divider"></div>
 
                         <h3>Table</h3>
-                        <table>
-                            <thead>
-                                <tr>
-                                   <th>One</th>
-                                   <th>Two</th>
-                                   <th>Three</th>
-                                   <th>Four</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>One</td>
-                                    <td>Two</td>
-                                    <td>Three</td>
-                                    <td>Four</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h6 class="mt-150 mb-100">.fill-parent to take the full width of parent.</h6>
-                        <table class="fill-parent">
-                            <thead>
-                                <tr>
-                                   <th>One</th>
-                                   <th>Two</th>
-                                   <th>Three</th>
-                                   <th>Four</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>One</td>
-                                    <td>Two</td>
-                                    <td>Three</td>
-                                    <td>Four</td>
-                                </tr>
-                                <tr>
-                                    <td>One</td>
-                                    <td>Two</td>
-                                    <td>Three</td>
-                                    <td>Four</td>
-                                </tr>
-                                <tr>
-                                    <td>One</td>
-                                    <td>Two</td>
-                                    <td>Three</td>
-                                    <td>Four</td>
-                                </tr>
-                                <tr>
-                                    <td>One</td>
-                                    <td>Two</td>
-                                    <td>Three</td>
-                                    <td>Four</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="divider"></div>
-
-                        <h3>Typography</h3>
-                        <h1 class="h1">This is heading 1</h1>
-                        <h2>This is heading 2</h2>
-                        <h3>This is heading 3</h3>
-                        <h4>This is heading 4</h4>
-                        <h5>This is heading 5</h5>
-                        <h6 class="bold">This is heading 6</h6>
-                        <p>This is a paragraph</p>
-                        <div class="divider"></div>
-
-                        <!-- <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 bg-default"><h1>h1, .h1</h1></div>
-                            <div class="border border-muted rounded p-150 bg-default"><h2>h2, .h2</h2></div>
-                            <div class="border border-muted rounded p-150 bg-default"><h3>h3, .h3</h3></div>
-                            <div class="border border-muted rounded p-150 bg-default"><h4>h4, .h4</h4></div>
-                            <div class="border border-muted rounded p-150 bg-default"><h5>h5, .h5</h5></div>
-                            <div class="border border-muted rounded p-150 bg-default"><h6>h6, .h6</h6></div>
-                        </div> -->
-                        
-                        <h4 class="black mt-300">Font Weight</h4>
-
-                        <p class="extra-light">.extra-light  or .fw-200  or .font-weight-200</p>
-                        <p class="light">.light or .fw-300 or .font-weight-300</p>
-                        <p class="regular">.regular or .fw-400 or .font-weight-400</p>
-                        <p class="semi-bold">.semi-bold or .fw-600 or .font-weight-600</p>
-                        <p class="bold">.bold or .strong or .fw-700 or .font-weight-700</p>
-                        <p class="black">.black or .fw-900 or .font-weight-900</p>
-
-                        <!-- <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="extra-light border border-muted rounded p-150 bg-default">.extra-light, <br> .fw-200, <br>.font-weight-200</div>
-                            <div class="light border border-muted rounded p-150 bg-default">.light,<br> .fw-300,<br> .font-weight-300</div>
-                            <div class="regular border border-muted rounded p-150 bg-default">.regular,<br> .fw-400,<br> .font-weight-400</div>
-                            <div class="semi-bold border border-muted rounded p-150 bg-default">.semi-bold,<br> .fw-600,<br> .font-weight-600</div>
-                            <div class="bold border border-muted rounded p-150 bg-default">.bold,<br> .strong,<br> .fw-700,<br> .font-weight-700</div>
-                            <div class="black border border-muted rounded p-150 bg-default">.black,<br> .fw-900,<br> .font-weight-900</div>
-                        </div> -->
-
-                        
-
-                        <h4 class="black mt-300">Text transformation</h4>
-                        <div class="divider"></div>
-                        <p class="ucase">.ucase</p>
-                        <p class="lcase">.lcase</p>
-                        <p class="capitalize">.capitalize  capitalizes the first letter of each word.</p>
-
-                        <h4 class="black mt-300">Text alignment</h4>
-                        <div class="divider"></div>
-                        <p class="">.text-left Default</p>
-                        <p class="">.text-center</p>
-                        <p class="">.text-right</p>
-                        <p class="">.text-justify</p>
-
-                        <h4 class="black mt-300">Text decoration</h4>
+                        <div class="grid fr4">
+                            <div class="pa0"> 
+                                <table>
+                                <thead>
+                                    <tr>
+                                       <th>One</th>
+                                       <th>Two</th>
+                                       <th>Three</th>
+                                       <th>Four</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>One</td>
+                                        <td>Two</td>
+                                        <td>Three</td>
+                                        <td>Four</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                            <div class="fr3 pa0">  
+                                <table class="fullwidth">
+                                <thead>
+                                    <tr>
+                                       <th>One</th>
+                                       <th>Two</th>
+                                       <th>Three</th>
+                                       <th>Four</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>One</td>
+                                        <td>Two</td>
+                                        <td>Three</td>
+                                        <td>Four</td>
+                                    </tr>
+                                    <tr>
+                                        <td>One</td>
+                                        <td>Two</td>
+                                        <td>Three</td>
+                                        <td>Four</td>
+                                    </tr>
+                                    <tr>
+                                        <td>One</td>
+                                        <td>Two</td>
+                                        <td>Three</td>
+                                        <td>Four</td>
+                                    </tr>
+                                    <tr>
+                                        <td>One</td>
+                                        <td>Two</td>
+                                        <td>Three</td>
+                                        <td>Four</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                           
+                           
+                          
+                        </div>
+    
+                      
+                        <div class="grid fr3">
+                            <div>
+                                <h3>Typography</h3>
+                                <h1 class="h1">This is heading 1</h1>
+                                <h2>This is heading 2</h2>
+                                <h3>This is heading 3</h3>
+                                <h4>This is heading 4</h4>
+                                <h5>This is heading 5</h5>
+                                <h6 class="bold">This is heading 6</h6>
+                                <p>This is a paragraph</p>
+                            </div>
+                            <div>
+                                <h4 class="">Font Weight</h4>
+                                <p class="xlight">.xlight  or .fw200 </p>
+                                <p class="light">.light or .fw300</p>
+                                <p class="regular">.regular or .fw400</p>
+                                <p class="sbold">.sbold or .fw600</p>
+                                <p class="bold">.bold or .strong or .fw700</p>
+                                <p class="black">.black or .fw900</p>
+                            </div>
+                            <div>
+                                <h4 class="black mt-300">Text transformation</h4>
+                                <div class="divider"></div>
+                                <p class="ucase">.ucase</p>
+                                <p class="lcase">.lcase</p>
+                                <p class="capitalize">.capitalize  capitalizes the first letter of each word.</p>
+                            </div>
+                            <div>
+                                <h4 class="black mt-300">Text alignment</h4>
+                                <div class="divider"></div>
+                                <p class="">.text-left Default</p>
+                                <p class="">.text-center</p>
+                                <p class="">.text-right</p>
+                                <p class="">.text-justify</p>
+                            </div>
+                            <div>
+                                  <h4 class="black mt-300">Text decoration</h4>
                         <div class="divider"></div>
                         <p class="overline">.overline</p>
                         <p class="underline">.underline</p>
                         <p class="no-underline">.no-underline</p>
-                        <p class="no-underline">.no-underline</p>
                         <p class="line-throw">.line-throw</p>
+                            </div>
+                        </div>
 
                         <div class="divider"></div>
 
                         <h3>Flex Parent</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150">.d-flex, <br> .flex</div>
-                            <div class="border border-muted rounded p-150">.flex-row, <br> .f-row</div>
-                            <div class="border border-muted rounded p-150">.flex-row-reverse, <br> .f-row-rev</div>
-                            <div class="border border-muted rounded p-150">.flex-column, <br> .f-col</div>
-                            <div class="border border-muted rounded p-150">.flex-column-reverse, <br> .f-col-rev</div>
-                            <div class="border border-muted rounded p-150">.flex-row-wrap, <br> .f-row-wrap</div>
-                            <div class="border border-muted rounded p-150">.flex-row-nowrap, <br> .f-row-nowrap</div>
-                            <div class="border border-muted rounded p-150">.flex-wrap, <br> .f-wrap</div>
-                            <div class="border border-muted rounded p-150">.flex-nowrap, <br> .f-nowrap</div>
-                            <div class="border border-muted rounded p-150">.flex-wrap-reverse, <br> .f-wrap-rev</div>
-                            <div class="border border-muted rounded p-150">.justify-content-start, <br> .jc-start</div>
-                            <div class="border border-muted rounded p-150">.justify-content-end, <br> .jc-end</div>
-                            <div class="border border-muted rounded p-150">.justify-content-center, <br> .jc-center</div>
-                            <div class="border border-muted rounded p-150">.justify-content-between, <br> .jc-between</div>
-                            <div class="border border-muted rounded p-150">.justify-content-around, <br> .jc-around</div>
-                            <div class="border border-muted rounded p-150">.justify-content-evenly, <br> .jc-evenly</div>
-                            <div class="border border-muted rounded p-150">.align-items-start, <br> .ai-start</div>
-                            <div class="border border-muted rounded p-150">.align-items-end, <br> .ai-end</div>
-                            <div class="border border-muted rounded p-150">.align-items-center, <br> .ai-center </div>
-                            <div class="border border-muted rounded p-150">.align-items-baseline, <br> .ai-baseline</div>
-                            <div class="border border-muted rounded p-150">.align-items-stretch, <br> .ai-stretch</div>
-                            <div class="border border-muted rounded p-150">.align-content-start, <br> .ac-start</div>
-                            <div class="border border-muted rounded p-150">.align-content-end, <br> .ac-end</div>
-                            <div class="border border-muted rounded p-150">.align-content-center, <br> .ac-center</div>
-                            <div class="border border-muted rounded p-150">.align-content-between, <br> .ac-between</div>
-                            <div class="border border-muted rounded p-150">.align-content-around, <br> .ac-around</div>
-                            <div class="border border-muted rounded p-150">.align-content-stretch, <br> .ac-stretch</div>
+                        <div class="grid fr4">
+                            <div class="border bc-muted round p-150">.d-flex, <br> .flex</div>
+                            <div class="border bc-muted round p-150">.flex-row, <br> .f-row</div>
+                            <div class="border bc-muted round p-150">.flex-row-reverse, <br> .f-row-rev</div>
+                            <div class="border bc-muted round p-150">.flex-column, <br> .f-col</div>
+                            <div class="border bc-muted round p-150">.flex-column-reverse, <br> .f-col-rev</div>
+                            <div class="border bc-muted round p-150">.flex-row-wrap, <br> .f-row-wrap</div>
+                            <div class="border bc-muted round p-150">.flex-row-nowrap, <br> .f-row-nowrap</div>
+                            <div class="border bc-muted round p-150">.flex-wrap, <br> .f-wrap</div>
+                            <div class="border bc-muted round p-150">.flex-nowrap, <br> .f-nowrap</div>
+                            <div class="border bc-muted round p-150">.flex-wrap-reverse, <br> .f-wrap-rev</div>
+                            <div class="border bc-muted round p-150">.justify-content-start, <br> .jc-start</div>
+                            <div class="border bc-muted round p-150">.justify-content-end, <br> .jc-end</div>
+                            <div class="border bc-muted round p-150">.justify-content-center, <br> .jc-center</div>
+                            <div class="border bc-muted round p-150">.justify-content-between, <br> .jc-between</div>
+                            <div class="border bc-muted round p-150">.justify-content-around, <br> .jc-around</div>
+                            <div class="border bc-muted round p-150">.justify-content-evenly, <br> .jc-evenly</div>
+                            <div class="border bc-muted round p-150">.align-items-start, <br> .ai-start</div>
+                            <div class="border bc-muted round p-150">.align-items-end, <br> .ai-end</div>
+                            <div class="border bc-muted round p-150">.align-items-center, <br> .ai-center </div>
+                            <div class="border bc-muted round p-150">.align-items-baseline, <br> .ai-baseline</div>
+                            <div class="border bc-muted round p-150">.align-items-stretch, <br> .ai-stretch</div>
+                            <div class="border bc-muted round p-150">.align-content-start, <br> .ac-start</div>
+                            <div class="border bc-muted round p-150">.align-content-end, <br> .ac-end</div>
+                            <div class="border bc-muted round p-150">.align-content-center, <br> .ac-center</div>
+                            <div class="border bc-muted round p-150">.align-content-between, <br> .ac-between</div>
+                            <div class="border bc-muted round p-150">.align-content-around, <br> .ac-around</div>
+                            <div class="border bc-muted round p-150">.align-content-stretch, <br> .ac-stretch</div>
                         </div>
                         <div class="divider"></div>
 
@@ -382,51 +366,51 @@
 
                         <h3>Flex Child</h3>
                         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150">.order-first</div>
-                            <div class="border border-muted rounded p-150">.order-last</div>
-                            <div class="border border-muted rounded p-150">
+                            <div class="border bc-muted round p-150">.order-first</div>
+                            <div class="border bc-muted round p-150">.order-last</div>
+                            <div class="border bc-muted round p-150">
                                 .order-1 to .order-5 <br>
                                 .flex-grow-0 to .flex-grow-11 <br>
                                 .f-grow-0 to .f-grow-11 <br>
                                 .f-g-0 to .f-g-11 <br>
                                 .fg-0 to .fg-11
                             </div>
-                            <div class="border border-muted rounded p-150">.flex-shrink-0, .f-shrink-0, .f-s-0, .fs-0</div>
-                            <div class="border border-muted rounded p-150">.flex-shrink-1, .f-shrink-1, .f-s-1, .fs-1</div>
-                            <div class="border border-muted rounded p-150">.align-self-auto</div>
-                            <div class="border border-muted rounded p-150">.align-self-start</div>
-                            <div class="border border-muted rounded p-150">.align-self-end</div>
-                            <div class="border border-muted rounded p-150">.align-self-center</div>
-                            <div class="border border-muted rounded p-150">.align-self-baseline</div>
-                            <div class="border border-muted rounded p-150">.align-self-stretch</div>
-                            <div class="border border-muted rounded p-150">.flex-fill</div>
+                            <div class="border bc-muted round p-150">.flex-shrink-0, .f-shrink-0, .f-s-0, .fs-0</div>
+                            <div class="border bc-muted round p-150">.flex-shrink-1, .f-shrink-1, .f-s-1, .fs-1</div>
+                            <div class="border bc-muted round p-150">.align-self-auto</div>
+                            <div class="border bc-muted round p-150">.align-self-start</div>
+                            <div class="border bc-muted round p-150">.align-self-end</div>
+                            <div class="border bc-muted round p-150">.align-self-center</div>
+                            <div class="border bc-muted round p-150">.align-self-baseline</div>
+                            <div class="border bc-muted round p-150">.align-self-stretch</div>
+                            <div class="border bc-muted round p-150">.flex-fill</div>
                         </div>
                         <div class="divider"></div>
 
 
                         <h3>Buttons</h3>
                         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150">
+                            <div class="border bc-muted round p-150">
                                 <input type="submit" value="Submit"> <br>
                                 <code>&ltinput type="submit" value="Submit"></code>
                                 <br> default
                             </div>
-                            <div class="border border-muted rounded p-150">
+                            <div class="border bc-muted round p-150">
                                 <input type="button" value="Submit"> <br>
                                 <code>&ltinput type="button" value="Submit"></code>
                                 <br> default
                             </div>
-                            <div class="border border-muted rounded p-150">
+                            <div class="border bc-muted round p-150">
                                 <button>Button</button> <br>
                                 <code> &ltbutton>Button&lt/button></code>
                                 <br> default
                             </div>
-                            <div class="border border-muted rounded p-150">
+                            <div class="border bc-muted round p-150">
                                 <a class="btn" href="#">Link</a> <br> 
                                 <code>&lta class="btn" href="#">Link&lt/a></code>
                                 <br> default
                             </div>
-                            <div class="border border-muted rounded p-150">
+                            <div class="border bc-muted round p-150">
                                 <a class="btn outline" href="#">Button with outline</a> <br> 
                                 <code>&lta class="btn outline" href="#">Link&lt/a></code> 
                                 <br> .outline
@@ -437,10 +421,10 @@
 
                         <h3>Width</h3>
                         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150">.width-100  Width 100%</div>
-                            <div class="border border-muted rounded p-150">.width-min-content </div>
-                            <div class="border border-muted rounded p-150">.width-max-content</div>
-                            <div class="border border-muted rounded p-150">.width-fit-content</div>
+                            <div class="border bc-muted round p-150">.width-100  Width 100%</div>
+                            <div class="border bc-muted round p-150">.width-min-content </div>
+                            <div class="border bc-muted round p-150">.width-max-content</div>
+                            <div class="border bc-muted round p-150">.width-fit-content</div>
                         </div>
                         <div class="divider"></div>
 
@@ -451,7 +435,7 @@
                         <h3>Form</h3>
                         <form action="">
                             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                                <div class="border border-muted rounded p-150">
+                                <div class="border bc-muted round p-150">
                                     <div class="field">
                                         <label class="required">Textbox</label>
                                         <input type="text" name="" id="">
@@ -464,7 +448,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="border border-muted rounded p-150">
+                                <div class="border bc-muted round p-150">
                                     <div class="field">
                                         <label class="">Radio vertical</label>
                                         <div class="radio-group">
@@ -474,7 +458,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border border-muted rounded p-150">
+                                <div class="border bc-muted round p-150">
                                     <div class="field">
                                         <label class="required">Radio horizonal .in-row</label>
                                         <div class="radio-group in-row">
@@ -484,7 +468,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border border-muted rounded p-150">
+                                <div class="border bc-muted round p-150">
                                     <div class="field">
                                         <label class="">checkbox vertical</label>
                                         <div class="checkbox-group">
@@ -494,7 +478,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border border-muted rounded p-150">
+                                <div class="border bc-muted round p-150">
                                     <div class="field">
                                         <label class="required">checkbox horizonal .in-row</label>
                                         <div class="checkbox-group in-row">
@@ -504,13 +488,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border border-muted rounded p-150">
+                                <div class="border bc-muted round p-150">
                                     <div class="field">
                                         <label class="required">textarea</label>
                                         <textarea name="" id="" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
-                                <div class="border border-muted rounded p-150">
+                                <div class="border bc-muted round p-150">
                                     <div class="field">
                                         <label class="required">File Upload</label> <br>
                                         <label class="btn outline">
@@ -525,125 +509,58 @@
 
                        
 
-                        <h4>Margin all</h4>
-                        <div class="divider"></div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150">.m-auto<br> .m-sm-auto<br>.m-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150">.m-0   <br> .m-sm-0   <br> .m-lg-0   <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150">.m-025 <br> .m-sm-025 <br> .m-lg-025 <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150">.m-050 <br> .m-sm-050 <br> .m-lg-050 <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150">.m-100 <br> .m-sm-100 <br> .m-lg-100 <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150">.m-150 <br> .m-sm-150 <br> .m-lg-150 <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150">.m-300 <br> .m-sm-300 <br> .m-lg-300 <br> margin: 3rem</div>
-                        </div>
+                        <h4>Margin</h4>
+                        <ul class="grid fr3">
+                            <li>margin all: .ma*[-lg/-sm]</li>
+                            <li>margin horizontally (left & right): .mh*[-lg/-sm] </li>
+                            <li>margin vertically (top & bottom): .mv*[-lg/-sm] </li>
+                            <li>margin bottom: .mb*[-lg/-sm]</li>
+                            <li>margin top: .mt*[-lg/-sm]</li>
+                            <li>margin left: .ml*[-lg/-sm]</li>
+                            <li>margin right: .mr*[-lg/-sm]</li>
+                        </ul>
                         
-                        <h4 class="mt-lg-300 mt-sm-0">Margin top</h4>
-                        <div class="divider"></div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.mt-auto<br> .mt-sm-auto<br> .mt-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.mt-0   <br> .mt-sm-0   <br> .mt-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.mt-025 <br> .mt-sm-025 <br> .mt-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.mt-050 <br> .mt-sm-050 <br> .mt-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.mt-100 <br> .mt-sm-100 <br> .mt-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.mt-150 <br> .mt-sm-150 <br> .mt-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.mt-300 <br> .mt-sm-300 <br> .mt-lg-300  <br> margin: 3rem</div>
-                        </div>
-                        <div class="divider"></div>
-                        <h4>Margin bottom</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.mb-auto<br> .mb-sm-auto<br> .mb-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.mb-0   <br> .mb-sm-0   <br> .mb-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.mb-025 <br> .mb-sm-025 <br> .mb-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.mb-050 <br> .mb-sm-050 <br> .mb-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.mb-100 <br> .mb-sm-100 <br> .mb-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.mb-150 <br> .mb-sm-150 <br> .mb-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.mb-300 <br> .mb-sm-300 <br> .mb-lg-300  <br> margin: 3rem</div>
-                        </div>
-                        <div class="divider"></div>
-                        <h4>Margin left</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.ml-auto<br> .ml-sm-auto<br> .ml-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.ml-0   <br> .ml-sm-0   <br> .ml-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.ml-025 <br> .ml-sm-025 <br> .ml-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.ml-050 <br> .ml-sm-050 <br> .ml-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.ml-100 <br> .ml-sm-100 <br> .ml-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.ml-150 <br> .ml-sm-150 <br> .ml-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.ml-300 <br> .ml-sm-300 <br> .ml-lg-300  <br> margin: 3rem</div>
-                        </div>
-                        <div class="divider"></div>
-                        <h4>Margin right</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.mr-auto<br> .mr-sm-auto<br> .mr-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.mr-0   <br> .mr-sm-0   <br> .mr-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.mr-025 <br> .mr-sm-025 <br> .mr-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.mr-050 <br> .mr-sm-050 <br> .mr-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.mr-100 <br> .mr-sm-100 <br> .mr-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.mr-150 <br> .mr-sm-150 <br> .mr-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.mr-300 <br> .mr-sm-300 <br> .mr-lg-300  <br> margin: 3rem</div>
-                        </div>
-                        <div class="divider"></div>
+                        
+                        * = -auto, 0 (0 rem), 025 (0.25rem), 050 (0.50rem), 100 (1.00rem), 150 (1.50rem), 300 (3.00 rem)
 
+                        <p>
+                            For example,
+                            <ul>
+                                <li>
+                                    .ma150 creates 1.50rem margin on all sides on all devices.
+                                </li>
+                                <li>.ma100-lg creates 1rem margin on all sides on large devices.</li>
+                                <li>.ma075-sm creates 0.75rem margin on all sides on small devices.</li>
+                            </ul>
+                        </p>
+                         
 
+                        <h4>Padding</h4>
 
-
-
-
-
-                        <h4>Padding all</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.p-auto<br> .p-sm-auto<br>.p-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.p-0   <br> .p-sm-0   <br> .p-lg-0   <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.p-025 <br> .p-sm-025 <br> .p-lg-025 <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.p-050 <br> .p-sm-050 <br> .p-lg-050 <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.p-100 <br> .p-sm-100 <br> .p-lg-100 <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.p-150 <br> .p-sm-150 <br> .p-lg-150 <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.p-300 <br> .p-sm-300 <br> .p-lg-300 <br> margin: 3rem</div>
+                        <h4>Width</h4>
+                        <div class="grid fr4">
+                            <div>  .fullwidth  <br>
+                            width:100% 
                         </div>
-                        <div class="divider"></div>
+                            <div> .fitcontent <br>
+                           
+                            width: fit-content
+                        </div>
+                            <div> .mincontent <br>
+                            width: min-content
+                        </div>
+                            <div> .maxcontent <br>
+                            width: max-content
+                        </div>
+                        </div>
+                      
+                        
+                       
+                        
+                       
+                        
+                       
 
-                        <h4>Padding top</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.pt-auto<br> .pt-sm-auto<br> .pt-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.pt-0   <br> .pt-sm-0   <br> .pt-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.pt-025 <br> .pt-sm-025 <br> .pt-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.pt-050 <br> .pt-sm-050 <br> .pt-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pt-100 <br> .pt-sm-100 <br> .pt-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.pt-150 <br> .pt-sm-150 <br> .pt-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pt-300 <br> .pt-sm-300 <br> .pt-lg-300  <br> margin: 3rem</div>
-                        </div>
-                        <div class="divider"></div>
-                        <h4>Padding bottom</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.pb-auto<br> .pb-sm-auto<br> .pb-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.pb-0   <br> .pb-sm-0   <br> .pb-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.pb-025 <br> .pb-sm-025 <br> .pb-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.pb-050 <br> .pb-sm-050 <br> .pb-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pb-100 <br> .pb-sm-100 <br> .pb-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.pb-150 <br> .pb-sm-150 <br> .pb-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pb-300 <br> .pb-sm-300 <br> .pb-lg-300  <br> margin: 3rem</div>
-                        </div>
-                        <div class="divider"></div>
-                        <h4>Padding left</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.pl-auto<br> .pl-sm-auto<br> .pl-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.pl-0   <br> .pl-sm-0   <br> .pl-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.pl-025 <br> .pl-sm-025 <br> .pl-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.pl-050 <br> .pl-sm-050 <br> .pl-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pl-100 <br> .pl-sm-100 <br> .pl-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.pl-150 <br> .pl-sm-150 <br> .pl-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pl-300 <br> .pl-sm-300 <br> .pl-lg-300  <br> margin: 3rem</div>
-                        </div>
-                        <div class="divider"></div>
-                        <h4>Padding right</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border border-muted rounded p-150 ">.pr-auto<br> .pr-sm-auto<br> .pr-lg-auto <br> margin: auto</div>
-                            <div class="border border-muted rounded p-150 ">.pr-0   <br> .pr-sm-0   <br> .pr-lg-0    <br> margin: 0</div>
-                            <div class="border border-muted rounded p-150 ">.pr-025 <br> .pr-sm-025 <br> .pr-lg-025  <br> margin: 0.25rem</div>
-                            <div class="border border-muted rounded p-150 ">.pr-050 <br> .pr-sm-050 <br> .pr-lg-050  <br> margin: 0.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pr-100 <br> .pr-sm-100 <br> .pr-lg-100  <br> margin: 1rem</div>
-                            <div class="border border-muted rounded p-150 ">.pr-150 <br> .pr-sm-150 <br> .pr-lg-150  <br> margin: 1.5rem</div>
-                            <div class="border border-muted rounded p-150 ">.pr-300 <br> .pr-sm-300 <br> .pr-lg-300  <br> margin: 3rem</div>
-                        </div>
                     </div> <!-- .content ends -->
 
                     <aside style="display: flex; flex-direction: column;">
@@ -652,10 +569,8 @@
                             This is a card in aside.
                         </div>
                     </aside>
-               
             </div>
         </main>
-
 
         <footer>
             <div class="footer-container">

@@ -36,7 +36,8 @@
         border-style: dotted !important;
     }
 
-    &.rounded{
-        border-radius: var(--default-border-radius);
+    &.round{
+        border-radius: var(--default-radius);
+        // border-radius: 10px;
     }
 }
