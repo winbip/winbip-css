@@ -1,5 +1,5 @@
 table{
-    border:1px solid var(--color-border-default);
+    border:1px solid var(--muted-border-color);
     border-radius: var(--border-radius-main);
     border-spacing: 0;
     overflow: hidden;
@@ -8,7 +8,7 @@ table{
         width: 100%;
     }
     thead{
-        background-color: var(--color-canvas-subtle);
+        background-color: var(--muted-background-color);
         color: var(--color-fg-default);
         text-align: center;
         tr{

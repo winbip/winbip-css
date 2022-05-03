@@ -31,93 +31,93 @@
         #{$property}: auto !important;
     }
 
-    .#{$prefix}-0 {
+    .#{$prefix}0 {
         #{$property}: 0 !important;
     }
   
-    .#{$prefix}-025 {
+    .#{$prefix}025 {
         #{$property}: 0.25rem !important;
     }
   
-    .#{$prefix}-050 {
+    .#{$prefix}050 {
         #{$property}: 0.5rem !important;
     }
   
-    .#{$prefix}-100 {
+    .#{$prefix}100 {
         #{$property}: 1rem !important;
     }
   
-    .#{$prefix}-150 {
+    .#{$prefix}150 {
         #{$property}: 1.5rem !important;
     }
   
-    .#{$prefix}-300 {
+    .#{$prefix}300 {
         #{$property}: 3rem !important;
     }
     
     @include small{
-        .#{$prefix}-sm-auto {
+        .#{$prefix}-auto-sm {
             #{$property}: auto !important;
         }
     
-        .#{$prefix}-sm-0 {
+        .#{$prefix}0-sm {
             #{$property}: 0 !important;
         }
       
-        .#{$prefix}-sm-025 {
+        .#{$prefix}025-sm {
             #{$property}: 0.25rem !important;
         }
       
-        .#{$prefix}-sm-050 {
+        .#{$prefix}050-sm {
             #{$property}: 0.5rem !important;
         }
       
-        .#{$prefix}-sm-100 {
+        .#{$prefix}100-sm {
             #{$property}: 1rem !important;
         }
       
-        .#{$prefix}-sm-150 {
+        .#{$prefix}150-sm {
             #{$property}: 1.5rem !important;
         }
       
-        .#{$prefix}-sm-300 {
+        .#{$prefix}300-sm {
             #{$property}: 3rem !important;
         }
     }
 
     @include large{
-        .#{$prefix}-lg-auto {
+        .#{$prefix}auto-lg {
             #{$property}: auto !important;
         }
     
-        .#{$prefix}-lg-0 {
+        .#{$prefix}0-lg {
             #{$property}: 0 !important;
         }
       
-        .#{$prefix}-lg-025 {
+        .#{$prefix}025-lg {
             #{$property}: 0.25rem !important;
         }
       
-        .#{$prefix}-lg-050 {
+        .#{$prefix}050-lg {
             #{$property}: 0.5rem !important;
         }
       
-        .#{$prefix}-lg-100 {
+        .#{$prefix}100-lg {
             #{$property}: 1rem !important;
         }
       
-        .#{$prefix}-lg-150 {
+        .#{$prefix}150-lg {
             #{$property}: 1.5rem !important;
         }
       
-        .#{$prefix}-lg-300 {
+        .#{$prefix}300-lg {
             #{$property}: 3rem !important;
         }
     }
 }
 
 
-@include create-margin("m", "margin"); //will create .m-* {margin:*rem;}
+@include create-margin("ma", "margin"); //will create .m-* {margin:*rem;}
 @include create-margin("mt", "margin-top"); 
 @include create-margin("mb", "margin-bottom"); 
 @include create-margin("ml", "margin-left"); 
