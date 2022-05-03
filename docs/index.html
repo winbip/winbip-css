@@ -6,23 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Theme</title>
 
+    
+
+    <link href="assets/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/skpaul/monogrid@0.0.1/monogrid.min.css">
     <link rel="stylesheet" href="../theme-dark.css">
     <link rel="stylesheet" href="../winbip.min.css">
 
     <style>
 
-        html{
-            /* accent-color: red !important; */
+        :not(pre)>code[class*=language-], pre[class*=language-] {
+            background: #22272e;
         }
-
-        form{
-            accent-color:  rgb(12, 216, 12);
-        }
-        /* *{
-            padding: 0;
-            margin: 0;
-        } */
 
         .grid{
             gap:2.5rem;
@@ -31,7 +26,6 @@
         .grid>*{
             padding:20px;
         }
-
 
         .inline-code {
             border: 1px solid lightgray;
@@ -80,9 +74,9 @@
         </header>
         <main class="">
           
-            <div class="container-fluid d-flex flex-wrap">
+            <div class="container-fluid flex fw-wrap">
 
-                <h1 style="width:100%;" class="mt-150 accent-fg">Page Heading
+                <h1 style="width:100%;" class="mt150">Page Heading
                     <div class="divider"></div>
                 </h1>
            
@@ -330,107 +324,152 @@
                         <div class="divider"></div>
 
                         <h3>Flex Parent</h3>
-                        <div class="grid fr4">
-                            <div class="border bc-muted round p-150">.d-flex, <br> .flex</div>
-                            <div class="border bc-muted round p-150">.flex-row, <br> .f-row</div>
-                            <div class="border bc-muted round p-150">.flex-row-reverse, <br> .f-row-rev</div>
-                            <div class="border bc-muted round p-150">.flex-column, <br> .f-col</div>
-                            <div class="border bc-muted round p-150">.flex-column-reverse, <br> .f-col-rev</div>
-                            <div class="border bc-muted round p-150">.flex-row-wrap, <br> .f-row-wrap</div>
-                            <div class="border bc-muted round p-150">.flex-row-nowrap, <br> .f-row-nowrap</div>
-                            <div class="border bc-muted round p-150">.flex-wrap, <br> .f-wrap</div>
-                            <div class="border bc-muted round p-150">.flex-nowrap, <br> .f-nowrap</div>
-                            <div class="border bc-muted round p-150">.flex-wrap-reverse, <br> .f-wrap-rev</div>
-                            <div class="border bc-muted round p-150">.justify-content-start, <br> .jc-start</div>
-                            <div class="border bc-muted round p-150">.justify-content-end, <br> .jc-end</div>
-                            <div class="border bc-muted round p-150">.justify-content-center, <br> .jc-center</div>
-                            <div class="border bc-muted round p-150">.justify-content-between, <br> .jc-between</div>
-                            <div class="border bc-muted round p-150">.justify-content-around, <br> .jc-around</div>
-                            <div class="border bc-muted round p-150">.justify-content-evenly, <br> .jc-evenly</div>
-                            <div class="border bc-muted round p-150">.align-items-start, <br> .ai-start</div>
-                            <div class="border bc-muted round p-150">.align-items-end, <br> .ai-end</div>
-                            <div class="border bc-muted round p-150">.align-items-center, <br> .ai-center </div>
-                            <div class="border bc-muted round p-150">.align-items-baseline, <br> .ai-baseline</div>
-                            <div class="border bc-muted round p-150">.align-items-stretch, <br> .ai-stretch</div>
-                            <div class="border bc-muted round p-150">.align-content-start, <br> .ac-start</div>
-                            <div class="border bc-muted round p-150">.align-content-end, <br> .ac-end</div>
-                            <div class="border bc-muted round p-150">.align-content-center, <br> .ac-center</div>
-                            <div class="border bc-muted round p-150">.align-content-between, <br> .ac-between</div>
-                            <div class="border bc-muted round p-150">.align-content-around, <br> .ac-around</div>
-                            <div class="border bc-muted round p-150">.align-content-stretch, <br> .ac-stretch</div>
-                        </div>
-                        <div class="divider"></div>
+                        <div class="grid fr3">
+                            <div><h5>Create a flexbox</h5> .flex</div>
+                            
+                            <div><h5>Flex direction: row</h5> .fd-row .fd-row-sm .fd-row-lg</div>
+                            <div><h5>Flex direction: row-reverse</h5> .fd-row-rev .fd-row-rev-sm .fd-row-rev-lg</div>
 
+                            <div><h5>Flex direction: column</h5> .fd-col .fd-col-sm .fd-col-lg</div>
+                            <div><h5>Flex direction: column-reverse</h5> .fd-col-rev .fd-col-rev-sm .fd-col-rev-lg</div>
 
-
-
-                        <h3>Flex Child</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border bc-muted round p-150">.order-first</div>
-                            <div class="border bc-muted round p-150">.order-last</div>
-                            <div class="border bc-muted round p-150">
-                                .order-1 to .order-5 <br>
-                                .flex-grow-0 to .flex-grow-11 <br>
-                                .f-grow-0 to .f-grow-11 <br>
-                                .f-g-0 to .f-g-11 <br>
-                                .fg-0 to .fg-11
+                            <div>
+                                <h5>Flex Flow</h5>  
+                                <ul>
+                                    <li>.ff-row-wrap - flex-flow: row wrap;  </li>
+                                    <li>.ff-row-nowrap</li>
+                                </ul>
                             </div>
-                            <div class="border bc-muted round p-150">.flex-shrink-0, .f-shrink-0, .f-s-0, .fs-0</div>
-                            <div class="border bc-muted round p-150">.flex-shrink-1, .f-shrink-1, .f-s-1, .fs-1</div>
-                            <div class="border bc-muted round p-150">.align-self-auto</div>
-                            <div class="border bc-muted round p-150">.align-self-start</div>
-                            <div class="border bc-muted round p-150">.align-self-end</div>
-                            <div class="border bc-muted round p-150">.align-self-center</div>
-                            <div class="border bc-muted round p-150">.align-self-baseline</div>
-                            <div class="border bc-muted round p-150">.align-self-stretch</div>
-                            <div class="border bc-muted round p-150">.flex-fill</div>
+
+                            <style>
+                                ul.cls>li{
+                                    list-style-position: inside;
+                                    list-style: none;
+                                }
+                                ul.cls>li>span:first-child{
+                                    width: 100px;
+                                    display: inline-block;
+                                }
+                            </style>
+                            <div>
+                                <h5>flex-wrap</h5>  
+                                <ul class="cls">
+                                    <li><span>.fw-wrap</span> <span>= flex-wrap: wrap</span></li>
+                                    <li><span>.fw-nowrap</span> <span></span>=  flex-wrap: nowrap;</span></li>
+                                    <li><span>.fw-rev</span> <span></span>= flex-wrap: wrap-reverse;</span></li>
+                                </ul>
+                            </div>
+                       
+                            <div>
+                                <h5>justify-content</h5>  
+                                <ul class="cls">
+                                    <li><span>.jc-start</span> <span> = justify-content: flex-start;</span></li>
+                                    <li><span>.jc-end</span> <span></span> = justify-content: flex-end;</span></li>
+                                    <li><span>.jc-center</span> <span></span> = justify-content: center;</span></li>
+                                    <li><span>.jc-between</span> <span> = justify-content: space-between;</span></li>
+                                    <li><span>.jc-around</span> <span> = justify-content: space-around;</span></li>
+                                    <li><span>.jc-evenly</span> <span> = justify-content: space-evenly;</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>align-items</h5>  
+                                <ul class="cls">
+                                    <li><span>.ai-start</span> <span> = align-items: flex-start;</span></li>
+                                    <li><span>.ai-end</span> <span></span> = align-items: flex-end;</span></li>
+                                    <li><span>.ai-center</span> <span></span> = align-items: center;</span></li>
+                                    <li><span>.ai-baseline</span> <span></span> = align-items: baseline;</span></li>
+                                    <li><span>.ai-stretch</span> <span></span> = align-items: stretch;</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>align-content</h5>  
+                                <ul class="cls">
+                                    <li><span>.ac-start</span> <span> = align-content: flex-start;</span></li>
+                                    <li><span>.ac-end</span> <span></span> = align-content: flex-end;</span></li>
+                                    <li><span>.ac-center</span> <span></span> = align-content: center;</span></li>
+                                    <li><span>.ac-between</span> <span></span> = align-content: space-between;</span></li>
+                                    <li><span>.ac-around</span> <span></span> = align-content: space-around;</span></li>
+                                    <li><span>.ac-stretch</span> <span></span> = align-content: stretch;</span></li>
+                                </ul>
+<pre><code class="language-css">.ac-start{
+    align-content: flex-start;
+}</code></pre>
+                            </div>
+                            <div>
+                                <h5>order (flex child)</h5>  
+                                <ul class="cls">
+                                    <li><span>.order-first</span> <span> = order: -1</span></li>
+                                    <li><span>..order*</span> <span></span> = order: *; (*=1-5)</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>flex-grow (flex child)</h5>  
+                                <ul class="cls">
+                                    <li><span>.no-grow</span> <span> = flex-grow: 0;</span></li>
+                                    <li><span>.grow</span> <span></span> = flex-grow: 1;</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>flex-shrink (flex child)</h5>  
+                                <ul class="cls">
+                                    <li><span>.shrink</span> <span> = flex-shrink: 1;</span></li>
+                                    <li><span>.no-shrink</span> <span></span> = flex-shrink: 0;</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>align-self (flex child)</h5>  
+                                <ul class="cls">
+                                    <li><span>.as-auto</span> <span> = align-self: auto;</span></li>
+                                    <li><span>.as-start</span> <span></span> =  align-self: flex-start;</span></li>
+                                    <li><span>.as-end</span> <span></span> = align-self: flex-end;</span></li>
+                                    <li><span>.as-center</span> <span></span> =  align-self: center;</span></li>
+                                    <li><span>.as-baseline</span> <span></span> = align-self: baseline;</span></li>
+                                    <li><span>.as-stretch</span> <span></span> = align-self: stretch</span></li>
+                                    <li><span>.</span> <span></span> = </span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>flex (flex child)</h5>  
+                                <ul class="cls">
+                                    <li><span>.flex-fill</span> <span> = flex: 1 1 auto;</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5></h5>  
+                                <ul class="cls">
+                                    <li><span>.</span> <span> = </span></li>
+                                    <li><span>.</span> <span></span> = </span></li>
+                                    <li><span>.</span> <span></span> = </span></li>
+                                </ul>
+                            </div>
+                        
                         </div>
                         <div class="divider"></div>
-
 
                         <h3>Buttons</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border bc-muted round p-150">
-                                <input type="submit" value="Submit"> <br>
-                                <code>&ltinput type="submit" value="Submit"></code>
-                                <br> default
+                        <div class="grid fr3">
+                            <div>
+                                <input type="submit" value="Submit" class="bg-default">
+                                <pre><code class="language-html">&ltinput type="submit" value="Submit"></code></pre>
                             </div>
-                            <div class="border bc-muted round p-150">
-                                <input type="button" value="Submit"> <br>
-                                <code>&ltinput type="button" value="Submit"></code>
-                                <br> default
+                            <div >
+                                <input type="button" value="Submit"> 
+                                <pre><code class="language-html">&ltinput type="button" value="Submit"></code></pre>                                
                             </div>
-                            <div class="border bc-muted round p-150">
-                                <button>Button</button> <br>
-                                <code> &ltbutton>Button&lt/button></code>
-                                <br> default
+                            <div >
+                                <button>Button</button> 
+                                <pre><code class="language-html"> &ltbutton>Button&lt/button></code></pre>
                             </div>
-                            <div class="border bc-muted round p-150">
-                                <a class="btn" href="#">Link</a> <br> 
-                                <code>&lta class="btn" href="#">Link&lt/a></code>
-                                <br> default
+                            <div >
+                                <a class="btn" href="#">Link</a> 
+                                <pre><code class="language-html">&lta class="btn" href="#">Link&lt/a></code></pre>
                             </div>
-                            <div class="border bc-muted round p-150">
-                                <a class="btn outline" href="#">Button with outline</a> <br> 
-                                <code>&lta class="btn outline" href="#">Link&lt/a></code> 
-                                <br> .outline
+                            <div >
+                                <a class="btn outline" href="#">Button with outline</a>
+                                <pre><code class="language-html">&lta class="btn outline" href="#">Link&lt/a></code></pre>
                             </div>
                         </div>
                         <div class="divider"></div>
-
-
-                        <h3>Width</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2.5rem; grid-auto-rows: 1fr;">
-                            <div class="border bc-muted round p-150">.width-100  Width 100%</div>
-                            <div class="border bc-muted round p-150">.width-min-content </div>
-                            <div class="border bc-muted round p-150">.width-max-content</div>
-                            <div class="border bc-muted round p-150">.width-fit-content</div>
-                        </div>
-                        <div class="divider"></div>
-
-
-
-
 
                         <h3>Form</h3>
                         <form action="">
@@ -519,7 +558,22 @@
                             <li>margin left: .ml*[-lg/-sm]</li>
                             <li>margin right: .mr*[-lg/-sm]</li>
                         </ul>
-                        
+<pre><code class="language-html" style="font-size: 1.2rem;">
+&ltdiv class="grid">
+    &ltdiv>fr1&lt/div>
+    &ltdiv class="from4">fr2&lt/div>
+    &ltdiv>fr3&lt/div>
+    &ltdiv>fr4&lt/div>
+    &ltdiv>fr5&lt/div>
+    &ltdiv>fr6&lt/div>
+    &ltdiv>fr7&lt/div>
+    &ltdiv>fr8&lt/div>
+    &ltdiv>fr9&lt/div>
+    &ltdiv>fr10&lt/div>
+    &ltdiv>fr11&lt/div>
+    &ltdiv>fr12&lt/div>
+&lt/div>
+</code></pre>
                         
                         * = -auto, 0 (0 rem), 025 (0.25rem), 050 (0.50rem), 100 (1.00rem), 150 (1.50rem), 300 (3.00 rem)
 
@@ -589,7 +643,7 @@
    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="hamburger-menu.js"></script> -->
+    <script src="assets/prism.js"></script>
     <script>
 
 

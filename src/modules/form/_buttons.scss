@@ -15,9 +15,9 @@ input[type=button], input[type=submit], button, .btn {
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: var(--default-foreground);
+    background-color: var(--muted-background);
+    border-color: var(--default-border);
 
     text-decoration: none;
         
@@ -63,10 +63,10 @@ input[type=button], input[type=submit], button, .btn {
     }
 
     &.outline {
-        color: #6c757d;
+        color: var(--default-forground);
         background-color: transparent;
         background-image: none;
-        border-color: #6c757d;
+        border-color: var(--default-border);
 
         &:hover {
             color: #fff;

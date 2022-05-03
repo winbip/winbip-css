@@ -1,7 +1,7 @@
 
 @mixin create-order($class:"", $property:"") {
     @for $i from 0 through 5 {
-        .#{$class}#{$i} {
+       .flex>.#{$class}#{$i} {
             #{$property}: #{$i} !important;
           }
     }
@@ -25,30 +25,36 @@
     flex-basis: $basis !important;
 }
 
-.order-first {
-    order: -1 !important;
+.flex{
+    &>.order-first {
+        order: -1 !important;
+    }
+    
+    &>.order-last {
+        order: 6 !important;
+    }
 }
 
-.order-last {
-    order: 6 !important;
-}
 
 @include create-order("order", "order");
 
 @mixin create-grow($class:"") {
     @for $i from 0 through 11 {
-        .#{$class}#{$i} {
+        .flex>.#{$class}#{$i} {
             @include flex-grow($i);
         }
     }
 }
 
-// @include create-grow("flex-grow"); //will create flex-grow-0 to flex-grow-11
-// @include create-grow("f-grow"); //will create f-grow-0 to f-grow-11
-// @include create-grow("f-g"); //will create f-g-0 to f-g-11
-@include create-grow("fg"); //will create fg-0 to fg-11
+// @include create-grow("fg"); //will create fg-0 to fg-11
 
 .flex{
+    &>.grow{
+        @include flex-grow(1);
+    }
+    &>.no-grow{
+        @include flex-grow(0);
+    }
     &>.shrink {
         @include flex-shrink(1);
     }

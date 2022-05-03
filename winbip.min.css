@@ -25,7 +25,6 @@
 */
 /*this must be on 2nd top*/
 * {
-  font-family: var(--default-font-family);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -49,6 +48,7 @@ html {
 }
 
 html, body {
+  font-family: var(--default-fontfamily);
   width: 100%;
   min-height: 100%;
   /*Custom properties with fallbacks for use when the property has not been set*/
@@ -56,7 +56,6 @@ html, body {
 }
 
 body {
-  font-size: var(--default-font-size);
   font-weight: var(--default-font-weight);
   text-align: left;
   line-height: var(--line-height-sm);
@@ -2156,7 +2155,6 @@ aside {
   }
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -2616,9 +2614,9 @@ input[type=button], input[type=submit], button, .btn {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  color: var(--default-foreground);
+  background-color: var(--muted-background);
+  border-color: var(--default-border);
   text-decoration: none;
 }
 input[type=button]:hover, input[type=submit]:hover, button:hover, .btn:hover {
@@ -2654,10 +2652,10 @@ input[type=button]:not(:disabled):not(.disabled):active:focus, input[type=button
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 input[type=button].outline, input[type=submit].outline, button.outline, .btn.outline {
-  color: #6c757d;
+  color: var(--default-forground);
   background-color: transparent;
   background-image: none;
-  border-color: #6c757d;
+  border-color: var(--default-border);
 }
 input[type=button].outline:hover, input[type=submit].outline:hover, button.outline:hover, .btn.outline:hover {
   color: #fff;
@@ -2773,12 +2771,12 @@ input[type=button].outline:not(:disabled):not(.disabled):active:focus, input[typ
   -webkit-flex-flow: row nowrap;
   flex-flow: row nowrap;
 }
-.flex.flex-wrap, .flex.f-wrap {
+.flex.fw-wrap {
   -ms-flex-wrap: wrap !important;
   -webkit-flex-wrap: wrap !important;
   flex-wrap: wrap !important;
 }
-.flex.flex-nowrap, .flex.f-nowrap {
+.flex.fw-nowrap {
   -ms-flex-wrap: nowrap !important;
   -webkit-flex-wrap: nowrap !important;
   flex-wrap: nowrap !important;
@@ -2862,110 +2860,47 @@ input[type=button].outline:not(:disabled):not(.disabled):active:focus, input[typ
   align-content: stretch !important;
 }
 
-.order-first {
+.flex > .order-first {
   order: -1 !important;
 }
-
-.order-last {
+.flex > .order-last {
   order: 6 !important;
 }
 
-.order0 {
+.flex > .order0 {
   order: 0 !important;
 }
 
-.order1 {
+.flex > .order1 {
   order: 1 !important;
 }
 
-.order2 {
+.flex > .order2 {
   order: 2 !important;
 }
 
-.order3 {
+.flex > .order3 {
   order: 3 !important;
 }
 
-.order4 {
+.flex > .order4 {
   order: 4 !important;
 }
 
-.order5 {
+.flex > .order5 {
   order: 5 !important;
 }
 
-.fg0 {
-  -ms-flex-positive: 0 !important;
-  -webkit-flex-grow: 0 !important;
-  flex-grow: 0 !important;
-}
-
-.fg1 {
+.flex > .grow {
   -ms-flex-positive: 1 !important;
   -webkit-flex-grow: 1 !important;
   flex-grow: 1 !important;
 }
-
-.fg2 {
-  -ms-flex-positive: 2 !important;
-  -webkit-flex-grow: 2 !important;
-  flex-grow: 2 !important;
+.flex > .no-grow {
+  -ms-flex-positive: 0 !important;
+  -webkit-flex-grow: 0 !important;
+  flex-grow: 0 !important;
 }
-
-.fg3 {
-  -ms-flex-positive: 3 !important;
-  -webkit-flex-grow: 3 !important;
-  flex-grow: 3 !important;
-}
-
-.fg4 {
-  -ms-flex-positive: 4 !important;
-  -webkit-flex-grow: 4 !important;
-  flex-grow: 4 !important;
-}
-
-.fg5 {
-  -ms-flex-positive: 5 !important;
-  -webkit-flex-grow: 5 !important;
-  flex-grow: 5 !important;
-}
-
-.fg6 {
-  -ms-flex-positive: 6 !important;
-  -webkit-flex-grow: 6 !important;
-  flex-grow: 6 !important;
-}
-
-.fg7 {
-  -ms-flex-positive: 7 !important;
-  -webkit-flex-grow: 7 !important;
-  flex-grow: 7 !important;
-}
-
-.fg8 {
-  -ms-flex-positive: 8 !important;
-  -webkit-flex-grow: 8 !important;
-  flex-grow: 8 !important;
-}
-
-.fg9 {
-  -ms-flex-positive: 9 !important;
-  -webkit-flex-grow: 9 !important;
-  flex-grow: 9 !important;
-}
-
-.fg10 {
-  -ms-flex-positive: 10 !important;
-  -webkit-flex-grow: 10 !important;
-  flex-grow: 10 !important;
-}
-
-.fg11 {
-  -ms-flex-positive: 11 !important;
-  -webkit-flex-grow: 11 !important;
-  flex-grow: 11 !important;
-}
-
 .flex > .shrink {
   -ms-flex-negative: 1 !important;
   -webkit-flex-shrink: 1 !important;

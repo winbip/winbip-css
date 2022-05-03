@@ -99,7 +99,6 @@
     }
 }
 
-
 .flex {
     @include display-flex();
 
@@ -173,13 +172,13 @@
         @include flex-flow(row, nowrap)
     }
 
-    &.flex-wrap,
-    &.f-wrap {
+    &.fw-wrap
+    {
         @include flex-wrap(wrap);
     }
 
-    &.flex-nowrap,
-    &.f-nowrap {
+    &.fw-nowrap
+    {
         @include flex-wrap(nowrap);
     }
 
@@ -187,71 +186,77 @@
         @include flex-wrap(wrap-reverse);
     }
 
-    &.jc-start {
-        @include justify-content(flex-start);
+    &.jc{
+        &-start {
+            @include justify-content(flex-start); //Create .jc-start { ... }
+        }
+
+        &-end {
+            @include justify-content(flex-end); //Create .jc-end { ... }
+        }
+
+        &-center {
+            @include justify-content(center); //Create .jc-center { ... }
+        }
+
+        &-between {
+            @include justify-content(space-between); //Create .jc-between { ... }
+        }
+
+        &-around {
+            @include justify-content(space-around);
+        }
+
+        &-evenly {
+            @include justify-content(space-evenly);
+        }
     }
 
-    &.jc-end {
-        @include justify-content(flex-end);
+    &.ai {
+        &-start {
+            @include align-items(flex-start);
+        }
+    
+        &-end {
+            @include align-items(flex-end);
+        }
+    
+        &-center {
+            @include align-items(center);
+        }
+    
+        &-baseline {
+            @include align-items(baseline);
+        }
+    
+        &-stretch {
+            @include align-items(stretch);
+        }
     }
 
-    &.jc-center {
-        @include justify-content(center);
-    }
-
-    &.jc-between {
-        @include justify-content(space-between);
-    }
-
-    &.jc-around {
-        @include justify-content(space-around);
-    }
-
-    &.jc-evenly {
-        @include justify-content(space-evenly);
-    }
-
-    &.ai-start {
-        @include align-items(flex-start);
-    }
-
-    &.ai-end {
-        @include align-items(flex-end);
-    }
-
-    &.ai-center {
-        @include align-items(center);
-    }
-
-    &.ai-baseline {
-        @include align-items(baseline);
-    }
-
-    &.ai-stretch {
-        @include align-items(stretch);
-    }
-
-    &.ac-start {
-        align-content: flex-start !important;
-    }
-
-    &.ac-end {
-        align-content: flex-end !important;
-    }
-
-    &.ac-center {
-        align-content: center !important;
-    }
-
-    &.ac-between {
-        align-content: space-between !important;
-    }
-
-    &.ac-around {
-        align-content: space-around !important;
-    }
-
-    &.ac-stretch {
-        align-content: stretch !important;
+    &.ac {
+        &-start {
+            align-content: flex-start !important;
+        }
+    
+        &-end {
+            align-content: flex-end !important;
+        }
+    
+        &-center {
+            align-content: center !important;
+        }
+    
+        &-between {
+            align-content: space-between !important;
+        }
+    
+        &-around {
+            align-content: space-around !important;
+        }
+    
+        &-stretch {
+            align-content: stretch !important;
+        }
     }
 }

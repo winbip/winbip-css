@@ -18,7 +18,7 @@
     --muted-foregroundr: #768390;
     --muted-border: #373e47;
 
-    --default-font-family: 'Source Sans Pro', sans-serif;
+    --default-fontfamily: 'Source Sans Pro', sans-serif;
     --root-font-size: 100%;   /* Used for <html></html> element */
     /* 
         font-size: 62.5%; // (62.5/100) * 16px = 10px 
