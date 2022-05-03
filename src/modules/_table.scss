@@ -4,9 +4,7 @@ table{
     border-spacing: 0;
     overflow: hidden;
     font-size: 0.9rem;
-    &.fill-parent{
-        width: 100%;
-    }
+  
     thead{
         background-color: var(--muted-background);
         color: var(--default-foreground);
@@ -16,6 +14,8 @@ table{
                 font-weight: 600;
                 padding: 0.2345rem;
                 border-bottom: 2px solid var(--muted-border);
+                word-break: break-all;
+                // white-space: nowrap;
             }
 
             th:not(:first-child){

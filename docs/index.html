@@ -34,6 +34,13 @@
             color: black;
             background: gray;
         }
+
+        span.cls{
+            border-radius: 0.30rem;
+            border:1px solid #373e47;
+            padding: 0 5px;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
@@ -143,8 +150,14 @@
 
                         <h3>Borders</h3>
                         <div class="grid fr4" style="gap:2rem;">
-                            <div class="border ">.border  all border</div>
-                            <div class="border round ">.border .round</div>
+                            <div class="border "><span class="cls">.border</span> creates border on all sides.
+<pre><code class="language-html">&ltdiv class="border">
+&lt/div></code></pre>
+                            </div>
+                            <div class="border round "><span class="border round ph025">.round</span> makes the border rounded.
+                                <pre><code class="language-html">&ltdiv class="border round">
+&lt/div></code></pre>
+                            </div>
                             <div class="border top ">.border .top</div>
                             <div class="border bottom ">.border .bottom</div>
                             <div class="border left ">.border .left</div>
@@ -215,13 +228,13 @@
                         <h3>Table</h3>
                         <div class="grid fr4">
                             <div class="pa0"> 
-                                <table>
+                                <table class="">
                                 <thead>
                                     <tr>
                                        <th>One</th>
                                        <th>Two</th>
                                        <th>Three</th>
-                                       <th>Four</th>
+                                       <th>Fourfdfdffdsdfsdfsdafsdf</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -591,21 +604,25 @@
 
                         <h4>Padding</h4>
 
-                        <h4>Width</h4>
+                        <h4>Sizing</h4>
                         <div class="grid fr4">
-                            <div>  .fullwidth  <br>
-                            width:100% 
-                        </div>
+                            <div> .fullwidth, <span class="cls">.fullwidth-sm</span> <span class="cls">.fullwidth-lg</span><br>
+                                width:100%
+                            </div>
+                            <div> .fullheight <br>
+                                height:100%
+                            </div>
                             <div> .fitcontent <br>
-                           
-                            width: fit-content
-                        </div>
+                        
+                                width: fit-content
+                            </div>
                             <div> .mincontent <br>
-                            width: min-content
-                        </div>
+                                width: min-content
+                                the min-content is the smallest size a box can take without overflowing its content.
+                            </div>
                             <div> .maxcontent <br>
-                            width: max-content
-                        </div>
+                                width: max-content
+                            </div>
                         </div>
                       
                         

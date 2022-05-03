@@ -41,12 +41,6 @@ html {
       //In order to seamlessly convert pixels to rem, we can set the root sizing to 62.5%. That means 1rem = 10px:
   */
 }
-@media only screen and (min-width: 992px) {
-  html {
-    font-size: 112.5%;
-  }
-}
-
 html, body {
   font-family: var(--default-fontfamily);
   width: 100%;
@@ -1950,206 +1944,206 @@ aside {
     padding-right: 3rem !important;
   }
 }
-.mv0 {
+.pv0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-.mv025 {
+.pv025 {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
 }
 
-.mv050 {
+.pv050 {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
 
-.mv100 {
+.pv100 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
 
-.mv150 {
+.pv150 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
 
-.mv300 {
+.pv300 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
 
 @media screen and (max-width: 991px) {
-  .mvauto-sm {
+  .pvauto-sm {
     padding-top: auto !important;
     padding-bottom: auto !important;
   }
 
-  .mv0-sm {
+  .pv0-sm {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 
-  .mv025-sm {
+  .pv025-sm {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
   }
 
-  .mv050-sm {
+  .pv050-sm {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
 
-  .mv100-sm {
+  .pv100-sm {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
 
-  .mv150-sm {
+  .pv150-sm {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
 
-  .mv300-sm {
+  .pv300-sm {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
 @media only screen and (min-width: 992px) {
-  .mvauto-lg {
+  .pvauto-lg {
     padding-top: auto !important;
     padding-bottom: auto !important;
   }
 
-  .mv0-lg {
+  .pv0-lg {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 
-  .mv025-lg {
+  .pv025-lg {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
   }
 
-  .mv050-lg {
+  .pv050-lg {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
 
-  .mv100-lg {
+  .pv100-lg {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
 
-  .mv150-lg {
+  .pv150-lg {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
 
-  .mv300-lg {
+  .pv300-lg {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
-.mh0 {
+.ph0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-.mh025 {
+.ph025 {
   padding-left: 0.25rem !important;
   padding-right: 0.25rem !important;
 }
 
-.mh050 {
+.ph050 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
 }
 
-.mh100 {
+.ph100 {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
 
-.mh150 {
+.ph150 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
 }
 
-.mh300 {
+.ph300 {
   padding-left: 3rem !important;
   padding-right: 3rem !important;
 }
 
 @media screen and (max-width: 991px) {
-  .mhauto-sm {
+  .phauto-sm {
     padding-left: auto !important;
     padding-right: auto !important;
   }
 
-  .mh0-sm {
+  .ph0-sm {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
-  .mh025-sm {
+  .ph025-sm {
     padding-left: 0.25rem !important;
     padding-right: 0.25rem !important;
   }
 
-  .mh050-sm {
+  .ph050-sm {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
 
-  .mh100-sm {
+  .ph100-sm {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
 
-  .mh150-sm {
+  .ph150-sm {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
 
-  .mh300-sm {
+  .ph300-sm {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
 }
 @media only screen and (min-width: 992px) {
-  .mhauto-lg {
+  .phauto-lg {
     padding-left: auto !important;
     padding-right: auto !important;
   }
 
-  .mh0-lg {
+  .ph0-lg {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
-  .mh025-lg {
+  .ph025-lg {
     padding-left: 0.25rem !important;
     padding-right: 0.25rem !important;
   }
 
-  .mh050-lg {
+  .ph050-lg {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
 
-  .mh100-lg {
+  .ph100-lg {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
 
-  .mh150-lg {
+  .ph150-lg {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
 
-  .mh300-lg {
+  .ph300-lg {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
@@ -2984,9 +2978,6 @@ table {
   overflow: hidden;
   font-size: 0.9rem;
 }
-table.fill-parent {
-  width: 100%;
-}
 table thead {
   background-color: var(--muted-background);
   color: var(--default-foreground);
@@ -2996,6 +2987,7 @@ table thead tr th {
   font-weight: 600;
   padding: 0.2345rem;
   border-bottom: 2px solid var(--muted-border);
+  word-break: break-all;
 }
 table thead tr th:not(:first-child) {
   border-left: 1px solid var(--muted-border);
@@ -3643,6 +3635,20 @@ img.scale-down {
 }
 
 .fullwidth {
+  width: 100% !important;
+}
+@media screen and (max-width: 991px) {
+  .fullwidth-sm {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fullwidth-lg {
+    width: 100% !important;
+  }
+}
+
+.fullheight {
   width: 100% !important;
 }
 

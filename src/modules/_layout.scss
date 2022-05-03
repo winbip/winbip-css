@@ -15,15 +15,15 @@
 html{
    
     accent-color: var(--accent-color);
-
     font-size: 100%; //in most browsers, this defaults to 16px.
+    
     /*
         //Another option to set font-size:
         font-size: 62.5%; // (62.5/100) * 16px = 10px 
         //In order to seamlessly convert pixels to rem, we can set the root sizing to 62.5%. That means 1rem = 10px:
     */
     @include large{
-        font-size: 112.5%; // = 18px in most browsers.
+        // font-size: 112.5%; // = 18px in most browsers.
     }
 
 
@@ -37,9 +37,7 @@ html, body {
     background-color: var(--dafault-background, #FFFFFF);  
 }
 
-
 body{
-   
     font-weight: var(--default-font-weight);
     text-align: left;
     line-height: var(--line-height-sm);

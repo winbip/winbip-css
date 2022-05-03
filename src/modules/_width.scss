@@ -1,6 +1,19 @@
 
 .fullwidth{
     width:100% !important; 
+    @include small(){
+        &-sm{
+            width:100% !important; 
+        }
+    }
+    @include large(){
+        &-lg{
+            width:100% !important; 
+        }
+    }
+}
+.fullheight{
+    width:100% !important; 
 }
 
 .fitcontent{

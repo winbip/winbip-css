@@ -223,5 +223,5 @@
     }
 }
 
-@include create-double-padding("mv", "padding-top","padding-bottom"); 
-@include create-double-padding("mh", "padding-left","padding-right"); 
+@include create-double-padding("pv", "padding-top","padding-bottom"); 
+@include create-double-padding("ph", "padding-left","padding-right"); 
