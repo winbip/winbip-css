@@ -28,15 +28,17 @@
             padding:20px;
         }
 
-        .inline-code {
-            border: 1px solid lightgray;
-            border-radius: 0.2rem;
-            /* padding: 0 2px; */
-            color: black;
-            background: gray;
-            
+        h2{
+            margin-top:40px;
+            font-weight: 700;
+        }
+        h3, h4, h5{
+            margin-top:30px;
         }
 
+        p{
+            margin-top:10px;
+        }
         span.cls{
             font-family: Consolas;
             border-radius: 0.30rem;
@@ -608,56 +610,46 @@
 
                         <h4>Padding</h4>
 
-                        <h4>Sizing</h4>
-                        <div class="grid fr3">
-                            <div> <span class="cls">.fullwidth</span>, <span class="cls">.fullwidth-sm</span>, <span class="cls">.fullwidth-lg</span><br>
-                     
-<pre><code class="language-html">&ltdiv class="fullwidth">
-    //100% width on all devices
-&lt/div>
-&ltdiv class="fullwidth-sm">
-    //100% width on sm devices
-&lt/div>                                   
-&ltdiv class="fullwidth-lg">
-    //100% width on large devices
-&lt/div>
-</code></pre>
-
-                            </div>
+                        <h2>Box Sizing</h2>
+                      
+                        <!-- .fullwidth -->
+                        <div>
+                            <h3>Full width</h3>
+                            <span class="cls">.fullwidth</span>, <span class="cls">.fullwidth-sm</span>, <span class="cls">.fullwidth-lg</span>.
+                            The element must not be an inline element.
+                        </div>
+                        <!-- .fullwidth// -->
 
 
-
-                            <div> 
-                                <span class="cls">.fullheight</span>, <span class="cls">.fullheight-sm</span>, <span class="cls">.fullheight-lg</span><br>
-
-<pre><code class="language-html">&ltdiv class="fullheight">
-    //100% height on all devices
-&lt/div>
-&ltdiv class="fullheight-sm">
-    //100% height on sm devices
-&lt/div>                                   
-&ltdiv class="fullheight-lg">
-    //100% height on large devices
-&lt/div>
-</code></pre>
-                                
-                            </div><!-- .fullheight// -->
-                        </div> 
-                        <!-- Sizing grid fr3// -->
-
+                        <!-- .fullheight -->
                         <h3>Full height</h3>
                         <p >
                             <span class="cls">.fullheight</span>, <span class="cls">.fullheight-sm</span>, <span class="cls">.fullheight-lg</span>
                         </p>
+                        <div class="bg-muted mb100" style="height:100px;">
+                            <div class="border bc-muted">This div is not .fullheight of its parent.</div>
+                       </div>
+                       <div class="bg-muted" style="height:100px;">
+                            <div class="border bc-muted fullheight">This div is .fullheight of its parent.</div>
+                       </div>
+
+<pre><code class="language-html">&ltdiv style="height:100px;">
+    &ltdiv class="fullheight">This div is .fullheight of its parent.&lt/div>
+&lt/div>
+</code></pre>
+                        <!-- .fullheight// -->
                       
                         <h3>Fit to content</h3>
                         <div>
-                            Classes are <span class="cls">.fitcontent</span>, <span class="cls">.fitcontent-sm</span>, <span class="cls">.fitcontent-lg</span><br>
-                            <p class="mt100">Fig: Div without .fitcontent</p>
+                            <p>
+                                Classes are <span class="cls">.fitcontent</span>, <span class="cls">.fitcontent-sm</span>, <span class="cls">.fitcontent-lg</span>
+                            </p>
+                            
+                            <p class="fg-muted">Fig: Div without .fitcontent</p>
                             <div class="border pa050 bc-muted">
                                 This is abcdef text in a line.
                             </div>
-                            <p class="mt100">Fig: Div with .fitcontent</p>
+                            <p class="fg-muted">Fig: Div with .fitcontent</p>
                             <div class="fitcontent border pa050 bc-muted">
                                 This is abcdef text in a line.
                             </div>
@@ -678,8 +670,6 @@
                                 This line has a verylongword within it.
                             </div>
                         </div><!-- min-content// -->
-                       
-                        
 
                         <h3>Maximum to content</h3>
                         <p>
@@ -709,8 +699,110 @@
                         
                         </div><!-- max-content// -->
 
+                        <!-- display -->
+                        <h2>Display</h2>
+                        <div class="grid fr6">
+                            <div>
+                                <h3>Hidden</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.hidden</span></li>
+                                    <li class="mb050"><span class="cls">.hidden-sm</span></li>
+                                    <li class="mb050"><span class="cls">.hidden-lg</span></li>
+                                </ul>
+                            </div>
 
-                        
+                            <div>
+                                <h3>Hidden</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-none</span></li>
+                                    <li class="mb050"><span class="cls">.d-none-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-none-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Inline</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-inline</span></li>
+                                    <li class="mb050"><span class="cls">.d-inline-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-inline-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Block</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-block</span></li>
+                                    <li class="mb050"><span class="cls">.d-block-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-block-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Inline Block</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-inblock</span></li>
+                                    <li class="mb050"><span class="cls">.d-inblock-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-inblock-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Flex</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-flex</span></li>
+                                    <li class="mb050"><span class="cls">.d-flex-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-flex-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Inline Flex</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-inflex</span></li>
+                                    <li class="mb050"><span class="cls">.d-inflex-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-inflex-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Grid</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-grid</span></li>
+                                    <li class="mb050"><span class="cls">.d-grid-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-grid-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Inline Grid</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-ingrid</span></li>
+                                    <li class="mb050"><span class="cls">.d-ingrid-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-ingrid-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Table</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-table</span></li>
+                                    <li class="mb050"><span class="cls">.d-table-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-table-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Table Row</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-table-row</span></li>
+                                    <li class="mb050"><span class="cls">.d-table-row-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-table-row-lg</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Table Cell</h3>
+                                <ul style="list-style: none;">
+                                    <li class="mb050"><span class="cls">.d-table-cell</span></li>
+                                    <li class="mb050"><span class="cls">.d-table-cell-sm</span></li>
+                                    <li class="mb050"><span class="cls">.d-table-cell-lg</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- display// -->
+
 
                     </div> <!-- .content ends -->
 
@@ -722,10 +814,6 @@
                     </aside>
             </div>
         </main>
-
-        <div style="background-color: red;" class="fitcontent">
-            Hello asdfsdf dfasdfs df
-        </div>
 
         <footer>
             <div class="footer-container">

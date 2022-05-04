@@ -3345,42 +3345,6 @@ img.scale-down {
   position: absolute;
 }
 
-.d-inline {
-  display: inline !important;
-}
-
-.d-inline-block {
-  display: inline-block !important;
-}
-
-.d-block {
-  display: block !important;
-}
-
-.d-grid {
-  display: grid !important;
-}
-
-.d-table {
-  display: table !important;
-}
-
-.d-table-row {
-  display: table-row !important;
-}
-
-.d-table-cell {
-  display: table-cell !important;
-}
-
-.d-inline-flex {
-  display: inline-flex !important;
-}
-
-.d-none {
-  display: none !important;
-}
-
 .previewPage .wrapper {
   width: 853px;
   margin: auto;
@@ -3705,6 +3669,115 @@ img.scale-down {
   .maxcontent-lg {
     width: max-content !important;
   }
+}
+
+.hidden {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+  .d-none-sm {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-none-lg {
+    display: none !important;
+  }
+}
+.d-inline {
+  display: inline !important;
+}
+@media screen and (max-width: 991px) {
+  .d-inline-sm {
+    display: inline !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-inline-lg {
+    display: inline !important;
+  }
+}
+.d-block {
+  display: block !important;
+}
+@media screen and (max-width: 991px) {
+  .d-block-sm {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-block-lg {
+    display: block !important;
+  }
+}
+.d-inblock {
+  display: inline-block !important;
+}
+@media screen and (max-width: 991px) {
+  .d-inblock-sm {
+    display: inline-block !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-inblock-lg {
+    display: inline-block !important;
+  }
+}
+.d-inflex {
+  display: inline-flex !important;
+}
+@media screen and (max-width: 991px) {
+  .d-inflex-sm {
+    display: inline-flex !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-inflex-lg {
+    display: inline-flex !important;
+  }
+}
+.d-flex {
+  display: flex !important;
+}
+@media screen and (max-width: 991px) {
+  .d-flex-sm {
+    display: flex !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-flex-lg {
+    display: flex !important;
+  }
+}
+.d-grid {
+  display: grid !important;
+}
+.d-ingrid {
+  display: -ms-inline-grid !important;
+  display: inline-grid !important;
+}
+.d-table {
+  display: table !important;
+}
+.d-table-row {
+  display: table-row !important;
+}
+.d-table-cell {
+  display: table-cell !important;
 }
 
 /*# sourceMappingURL=winbip.min.css.map */
