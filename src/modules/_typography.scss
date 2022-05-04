@@ -1,173 +1,138 @@
-h1 {
-    letter-spacing: -0.015em; }
 
-h1 {
+// :root{
+//     --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+//     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+
+//     --font-body: Inter, var(--font-fallback);
+//     --font-heading: Inter, var(--font-fallback);
+
+//     --base-font-size: 100%;
+//     --base-line-height: 1.2;
+//     --intermediate-line-height: 1.5;
+//     --heading-line-height: var(--base-line-height);
+//     --heading-letter-spacing: -0.031rem;
+//     --font-content-line-height: 1.75;
+//     --font-body-strong-weight: 600;
+
+//     --type-heading-h1-font-size: 2.488rem;
+//     --type-heading-h2-font-size: 2.074rem;
+//     --type-heading-h3-font-size: 1.728rem;
+//     --type-heading-h4-font-size: 1.44rem;
+//     --type-heading-h5-font-size: 1.2rem;
+//     --type-base-font-size-rem: 1rem;
+//     --type-smaller-font-size: 0.833rem;
+//     --type-tiny-font-size: 0.694rem;
+
+//     --type-heading-h1-font-size-mobile: 1.802rem;
+//     --type-heading-h2-font-size-mobile: 1.602rem;
+//     --type-heading-h3-font-size-mobile: 1.424rem;
+//     --type-heading-h4-font-size-mobile: 1.266rem;
+
+//     --type-heading-h1: 600 var(--type-heading-h1-font-size-mobile) /
+//     var(--heading-line-height) var(--font-heading);
+//   --type-heading-h2: 500 var(--type-heading-h2-font-size-mobile) /
+//     var(--heading-line-height) var(--font-heading);
+//   --type-heading-h3: 300 var(--type-heading-h3-font-size-mobile) /
+//     var(--heading-line-height) var(--font-heading);
+//   --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile) /
+//     var(--heading-line-height) var(--font-heading);
+//   --type-heading-h5: 400 var(--type-heading-h5-font-size) /
+//     var(--heading-line-height) var(--font-heading);
+//   --type-heading-h6: 400 var(--type-base-font-size-rem) /
+//     var(--heading-line-height) var(--font-heading);
+//   --type-article-p: 400 var(--type-base-font-size-rem) /  var(--font-content-line-height) var(--font-body);
+// }
+
+//   @include large(){
+//     :root {
+//         --type-heading-h1: 600 var(--type-heading-h1-font-size) /
+//           var(--heading-line-height) var(--font-heading);
+//         --type-heading-h2: 500 var(--type-heading-h2-font-size) /
+//           var(--heading-line-height) var(--font-heading);
+//         --type-heading-h3: 300 var(--type-heading-h3-font-size) /
+//           var(--heading-line-height) var(--font-heading);
+//         --type-heading-h4: 400 var(--type-heading-h4-font-size) /
+//           var(--heading-line-height) var(--font-heading);
+//       }
+//   }
+
+
+
+.h1{
+    --h1-font-size: var(--h1-font-size-sm);
+    @include large(){
+        --h1-font-size: var(--h1-font-size-lg);
+    }
+    // --type-heading-h1: 600 var(--h1-font-size)/var(--default-line-height-for-heading) var(--default-font);
+    font: 600 var(--h1-font-size)/var(--default-line-height-for-heading) var(--default-font);
+}
+.h1 {
     font-size: 65.6px;
     font-size: 4.1rem;
     line-height: 50px;
     line-height: 3.125rem;
+    word-break: break-word;
     // margin-top: 50px;
     // margin-top: 3.125rem;
     // margin-bottom: 25px;
     // margin-bottom: 1.5625rem; 
 }
   
-  h2 {
-    font-size: 40px;
-    font-size: 2.5rem;
-    line-height: 37.5px;
-    line-height: 2.34375rem;
-    // margin-top: 75px;
-    // margin-top: 4.6875rem;
-    // margin-bottom: 25px;
-    // margin-bottom: 1.5625rem; 
-}
-  
-  h3 {
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 37.5px;
-    line-height: 2.34375rem;
-    // margin-top: 50px;
-    // margin-top: 3.125rem;
-    // margin-bottom: 12.5px;
-    // margin-bottom: 0.78125rem;
- }
-  
-  h4 {
-    font-size: 19.552px;
-    font-size: 1.222rem;
-    line-height: 25px;
-    line-height: 1.5625rem;
-    // margin-top: 0px;
-    // margin-top: 0rem;
-    // margin-bottom: 6.25px;
-    // margin-bottom: 0.390625rem; 
-}
-  
-  h5 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 25px;
-    line-height: 1.5625rem;
-    // margin-top: 62.5px;
-    // margin-top: 3.90625rem;
-    // margin-bottom: 12.5px;
-    // margin-bottom: 0.78125rem;
- }
-  
-  h6 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 25px;
-    line-height: 1.5625rem;
-    // margin-top: 62.5px;
-    // margin-top: 3.90625rem;
-    // margin-bottom: 12.5px;
-    // margin-bottom: 0.78125rem;
- }
 
-    @include large(){
-        h1 {
-            font-size: 97.6px;
-            font-size: 6.1rem;
-            line-height: 91px;
-            line-height: 5.0555555556rem;
-            // margin-top: 78px;
-            // margin-top: 4.3333333333rem;
-            // margin-bottom: 26px;
-            // margin-bottom: 1.4444444444rem; 
-        }
-        
-          h2 {
-            font-size: 48px;
-            font-size: 3rem;
-            line-height: 45.5px;
-            line-height: 2.5277777778rem;
-            // margin-top: 104px;
-            // margin-top: 5.7777777778rem;
-            // margin-bottom: 26px;
-            // margin-bottom: 1.4444444444rem; 
-        }
-        
-          h3 {
-            font-size: 35.68px;
-            font-size: 2.23rem;
-            line-height: 33.8px;
-            line-height: 1.8777777778rem;
-            // margin-top: 52px;
-            // margin-top: 2.8888888889rem;
-            // margin-bottom: 26px;
-            // margin-bottom: 1.4444444444rem;
-         }
-        
-          h4 {
-            font-size: 19.552px;
-            font-size: 1.222rem;
-            line-height: 26px;
-            line-height: 1.4444444444rem;
-            // margin-top: 26px;
-            // margin-top: 1.4444444444rem;
-            // margin-bottom: 13px;
-            // margin-bottom: 0.7222222222rem; 
-        }
-        
-          h5 {
-            font-size: 16px;
-            font-size: 1rem;
-            line-height: 26px;
-            line-height: 1.4444444444rem;
-            // margin-top: 65px;
-            // margin-top: 3.6111111111rem;
-            // margin-bottom: 13px;
-            // margin-bottom: 0.7222222222rem;
-         }
-        
-          h6 {
-            font-size: 16px;
-            font-size: 1rem;
-            line-height: 26px;
-            line-height: 1.4444444444rem;
-            // margin-top: 65px;
-            // margin-top: 3.6111111111rem;
-            // margin-bottom: 13px;
-            // margin-bottom: 0.7222222222rem;
-         }
+h1,h2,h3 {
+    letter-spacing: var(--heading-letter-spacing)
+}
+
+h1 {
+    font: var(--type-heading-h1);
+    margin-bottom: 2rem;
+    word-break: break-word;
+}
+
+@media screen and (min-width: 769px) {
+    h1 {
+        font:var(--type-heading-h1)
     }
-// .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-//     // margin-bottom: .5rem;
-//     // font-family: inherit;
-//     font-weight: 500;
-//     line-height: 1.2;
-// }
+}
 
-// .h1, h1 {
-//     font-size: 2.5rem;
-// }
+h2 {
+    font: var(--type-heading-h2);
+    margin: 4rem 0 .5rem
+}
 
-// .h2, h2 {
-//     font-size: 2rem;
-// }
+h3 {
+    font: var(--type-heading-h3);
+    margin: 2rem 0 .5rem
+}
 
-// .h3, h3 {
-//     font-size: 1.75rem;
-// }
+h2~div~h3,h2~h3 {
+    margin-top: 1rem
+}
 
-// .h4, h4 {
-//     font-size: 1.5rem;
-// }
+h4 {
+    font: var(--type-heading-h4);
+    letter-spacing: .5px;
+    margin: 2rem 0 1rem
+}
 
-// .h5, h5 {
-//     font-size: 1.25rem;
-// }
+h5 {
+    font: var(--type-heading-h5)
+}
 
-// .h6, h6 {
-//     font-size: 1rem;
-// }
+h5,h6 {
+    letter-spacing: 1.5px;
+    margin: 2rem 0 1rem;
+    // text-transform: uppercase
+}
 
-// p, .p{
-//     font-size: 1rem;
-// }
+h6 {
+    font: var(--type-heading-h6)
+}
+ 
+p {
+    font: var(--type-article-p);
+    margin-bottom:1.8rem;
+}
 
 /* Makes text upper case*/
 .ucase{
@@ -223,7 +188,10 @@ h1 {
     font-style: italic;
 }
 
-.xlight, .fw200{
+.thin, .fw100{
+    font-weight: 100;
+}
+.extralight, .fw200{
     font-weight: 200;
 }
 .light, .fw300{
@@ -232,11 +200,17 @@ h1 {
 .regular, .fw400{
     font-weight: 400;
 }
-.sbold, .fw600{
+.medium, .fw500{
+    font-weight: 500;
+}
+.semibold, .fw600{
     font-weight: 600;
 }
 .bold, .strong, .fw700{
     font-weight: 700;
+}
+.extrabold, .fw800{
+    font-weight: 800;
 }
 .black, .fw900{
     font-weight: 900;

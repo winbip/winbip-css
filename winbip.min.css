@@ -24,21 +24,25 @@
     }
 */
 /*this must be on 2nd top*/
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
-  line-height: 25px;
-  line-height: 1.5625rem;
+  line-height: var(--default-line-height-sm);
 }
 @media only screen and (min-width: 992px) {
   * {
-    line-height: 26px;
-    line-height: 1.4444444444rem;
+    line-height: var(--default-line-height-lg);
   }
 }
 
 html {
-  accent-color: var(--accent-color);
+  scroll-behavior: smooth;
   font-size: 16px;
   font-size: 100%;
   -ms-text-size-adjust: 100%;
@@ -56,12 +60,6 @@ html {
   }
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 html, body {
   font-family: var(--default-fontfamily);
   width: 100%;
@@ -73,8 +71,15 @@ html, body {
 body {
   font-weight: var(--default-font-weight);
   text-align: left;
+  line-height: var(--line-height-sm);
   color: var(--default-foreground);
 }
+@media only screen and (min-width: 992px) {
+  body {
+    line-height: var(--line-height-lg);
+  }
+}
+
 /* ---------------------------------------------------------------> */
 /* This section is requried to always keep the footer at the bottom */
 .master-wrapper {
@@ -92,8 +97,8 @@ body {
 .container,
 .container-fluid {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2162,95 +2167,77 @@ aside {
     padding-right: 3rem !important;
   }
 }
-h1 {
-  letter-spacing: -0.015em;
+.h1 {
+  --h1-font-size: var(--h1-font-size-sm);
+  font: 600 var(--h1-font-size)/var(--default-line-height-for-heading) var(--default-font);
+}
+@media only screen and (min-width: 992px) {
+  .h1 {
+    --h1-font-size: var(--h1-font-size-lg);
+  }
 }
 
-h1 {
+.h1 {
   font-size: 65.6px;
   font-size: 4.1rem;
   line-height: 50px;
   line-height: 3.125rem;
+  word-break: break-word;
 }
 
+h1, h2, h3 {
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+h1 {
+  font: var(--type-heading-h1);
+  margin-bottom: 2rem;
+  word-break: break-word;
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font: var(--type-heading-h1);
+  }
+}
 h2 {
-  font-size: 40px;
-  font-size: 2.5rem;
-  line-height: 37.5px;
-  line-height: 2.34375rem;
+  font: var(--type-heading-h2);
+  margin: 4rem 0 0.5rem;
 }
 
 h3 {
-  font-size: 32px;
-  font-size: 2rem;
-  line-height: 37.5px;
-  line-height: 2.34375rem;
+  font: var(--type-heading-h3);
+  margin: 2rem 0 0.5rem;
+}
+
+h2 ~ div ~ h3, h2 ~ h3 {
+  margin-top: 1rem;
 }
 
 h4 {
-  font-size: 19.552px;
-  font-size: 1.222rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
+  font: var(--type-heading-h4);
+  letter-spacing: 0.5px;
+  margin: 2rem 0 1rem;
 }
 
 h5 {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
+  font: var(--type-heading-h5);
+}
+
+h5, h6 {
+  letter-spacing: 1.5px;
+  margin: 2rem 0 1rem;
 }
 
 h6 {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
+  font: var(--type-heading-h6);
 }
 
-@media only screen and (min-width: 992px) {
-  h1 {
-    font-size: 97.6px;
-    font-size: 6.1rem;
-    line-height: 91px;
-    line-height: 5.0555555556rem;
-  }
-
-  h2 {
-    font-size: 48px;
-    font-size: 3rem;
-    line-height: 45.5px;
-    line-height: 2.5277777778rem;
-  }
-
-  h3 {
-    font-size: 35.68px;
-    font-size: 2.23rem;
-    line-height: 33.8px;
-    line-height: 1.8777777778rem;
-  }
-
-  h4 {
-    font-size: 19.552px;
-    font-size: 1.222rem;
-    line-height: 26px;
-    line-height: 1.4444444444rem;
-  }
-
-  h5 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.4444444444rem;
-  }
-
-  h6 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.4444444444rem;
-  }
+p {
+  font: var(--type-article-p);
+  margin-bottom: 1.8rem;
 }
+
 /* Makes text upper case*/
 .ucase {
   text-transform: uppercase;
@@ -2299,7 +2286,11 @@ h6 {
   font-style: italic;
 }
 
-.xlight, .fw200 {
+.thin, .fw100 {
+  font-weight: 100;
+}
+
+.extralight, .fw200 {
   font-weight: 200;
 }
 
@@ -2311,12 +2302,20 @@ h6 {
   font-weight: 400;
 }
 
-.sbold, .fw600 {
+.medium, .fw500 {
+  font-weight: 500;
+}
+
+.semibold, .fw600 {
   font-weight: 600;
 }
 
 .bold, .strong, .fw700 {
   font-weight: 700;
+}
+
+.extrabold, .fw800 {
+  font-weight: 800;
 }
 
 .black, .fw900 {

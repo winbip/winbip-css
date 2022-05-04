@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap'); */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "Inter";
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    font-weight: 1 999;
+    font-stretch: 75% 100%;
+    font-style: oblique 0deg 20deg;
+    font-display: swap;
+}
 
 :root {
-    
+   
     --brand-color: green;
     --accent-color: #316dca;
     --form-accent-color: rgb(12, 216, 12);
@@ -18,8 +28,10 @@
     --muted-foreground: #768390;
     --muted-border: #373e47;
 
-    --default-fontfamily: 'Source Sans Pro', sans-serif;
-    --root-font-size: 100%;   /* Used for <html></html> element */
+    /* --default-fontfamily: 'Source Sans Pro', sans-serif; */
+    --default-fontfamily: 'Inter', sans-serif;
+    --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+    --default-font: var(--default-fontfamily),var(--font-fallback);
     /* 
         font-size: 62.5%; // (62.5/100) * 16px = 10px 
      */
@@ -27,30 +39,83 @@
     --default-font-weight: 400;
     /* --line-height-lg: 1.5;
     --line-height-sm: 1.15; */
-    
+    --default-line-height-for-heading: 1.2;
+    --h1-font-size-sm: 1.802rem;
+    --h1-font-size-lg: 2.488rem;
+
+    --h2-font-size-lg: 2.074rem;
+    --h2-font-size-sm: 1.602rem;
+
+    --h3-font-size-lg: 1.728rem;
+    --h3-font-size-sm: 1.424rem;
+
+    --h4-font-size-lg: 1.44rem;
+    --h4-font-size-sm: 1.266rem;
+
+    --default-line-height-sm: 1.50;
+    --default-line-height-lg: 1.75;
     --default-radius: 0.25rem;
+}
 
-    /* --color-canvas-default: #22272e;  
-    --color-canvas-overlay: #2d333b;   
-    --color-canvas-inset: #1c2128;
-    --color-canvas-subtle: #2d333b; 
 
-    --color-fg-default: #adbac7;  
-    --color-fg-muted: #768390;  
-    --color-fg-subtle: #545d68;
-    --color-fg-on-emphasis: #cdd9e5;
+:root {
+    --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+    --font-body: Inter,var(--font-fallback);
+    --font-heading: Inter,var(--font-fallback);
+    --font-code: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
+    --base-font-size: 100%;
+    --base-line-height: 1.2;
+    --intermediate-line-height: 1.5;
+    --heading-line-height: var(--base-line-height);
+    --heading-letter-spacing: -0.031rem;
+    --font-content-line-height: 1.75;
+    --font-body-strong-weight: 600;
+    --type-heading-h1-font-size: 2.488rem;
+    --type-heading-h2-font-size: 2.074rem;
+    --type-heading-h3-font-size: 1.728rem;
+    --type-heading-h4-font-size: 1.44rem;
+    --type-heading-h5-font-size: 1.2rem;
+    --type-base-font-size-rem: 1rem;
+    --type-smaller-font-size: 0.833rem;
+    --type-tiny-font-size: 0.694rem;
+    --type-heading-h1-font-size-mobile: 1.802rem;
+    --type-heading-h2-font-size-mobile: 1.602rem;
+    --type-heading-h3-font-size-mobile: 1.424rem;
+    --type-heading-h4-font-size-mobile: 1.266rem;
+    --type-emphasis-m: var(--font-body-strong-weight) var(--type-smaller-font-size)/1.23 var(--font-body);
+    --type-label-s: 600 var(--type-tiny-font-size)/1.2 var(--font-heading);
+    --type-heading-h1: 600 var(--type-heading-h1-font-size-mobile)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h2: 500 var(--type-heading-h2-font-size-mobile)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h3: 300 var(--type-heading-h3-font-size-mobile)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h5: 400 var(--type-heading-h5-font-size)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h6: 600 var(--type-base-font-size-rem)/var(--heading-line-height) var(--font-heading);
+    --type-article-p: 400 var(--type-base-font-size-rem)/var(--font-content-line-height) var(--font-body);
+    --max-width: 1440px;
+    --gutter: 1rem;
+    --top-navigation-height: 4rem;
+    --top-navigation-offset: -4rem;
+    --z-index-back: -1;
+    --z-index-top: 9999;
+    --z-index-mid: 500;
+    --z-index-nav-menu: 200;
+    --z-index-search-results: 101;
+    --z-index-low: 100;
+    --z-index-search-results-home: 99;
+    --elem-radius: 0.25rem;
+    --focus-effect: 0 0 0 3px var(--accent-primary-engage);
+    --form-elem-height: 2rem;
+    --sticky-header-height: 0;
+    --top-nav-height: 4rem;
+    --main-document-header-height: 6rem;
+    --icon-size: 1rem
+}
 
-    --color-border-default: #444c56; 
-    --color-border-muted: #373e47; 
-    --color-border-subtle: rgba(205,217,229,0.1);
-
-    --accent-color: #316dca;
-    --color-accent-fg: #539bf5;
-    --color-accent-emphasis: #316dca;
-    --color-accent-muted: rgba(65,132,228,0.4);
-    --color-accent-subtle: rgba(65,132,228,0.15);
-
-    --form-accent-color: rgb(12, 216, 12);
-    --blue-color: #539bf5;
-    --brand-color: #FFF; */
+@media screen and (min-width: 769px) {
+    :root {
+        --type-heading-h1:600 var(--type-heading-h1-font-size)/var(--heading-line-height) var(--font-heading);
+        --type-heading-h2: 500 var(--type-heading-h2-font-size)/var(--heading-line-height) var(--font-heading);
+        --type-heading-h3: 400 var(--type-heading-h3-font-size)/var(--heading-line-height) var(--font-heading);
+        --type-heading-h4: 400 var(--type-heading-h4-font-size)/var(--heading-line-height) var(--font-heading)
+    }
 }
