@@ -25,22 +25,43 @@
 */
 /*this must be on 2nd top*/
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 25px;
+  line-height: 1.5625rem;
+}
+@media only screen and (min-width: 992px) {
+  * {
+    line-height: 26px;
+    line-height: 1.4444444444rem;
+  }
 }
 
 html {
   accent-color: var(--accent-color);
+  font-size: 16px;
   font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   /*
       //Another option to set font-size:
       font-size: 62.5%; // (62.5/100) * 16px = 10px 
       //In order to seamlessly convert pixels to rem, we can set the root sizing to 62.5%. That means 1rem = 10px:
   */
 }
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body {
   font-family: var(--default-fontfamily);
   width: 100%;
@@ -50,18 +71,11 @@ html, body {
 }
 
 body {
-  font-size: 1rem;
+  overflow-x: hidden;
   font-weight: var(--default-font-weight);
   text-align: left;
-  line-height: var(--line-height-sm);
   color: var(--default-foreground);
 }
-@media only screen and (min-width: 992px) {
-  body {
-    line-height: var(--line-height-lg);
-  }
-}
-
 /* ---------------------------------------------------------------> */
 /* This section is requried to always keep the footer at the bottom */
 .master-wrapper {
@@ -2149,39 +2163,143 @@ aside {
     padding-right: 3rem !important;
   }
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  line-height: 1.2;
+h1 {
+  letter-spacing: -0.015em;
 }
 
-.h1, h1 {
+h1 {
+  font-size: 65.6px;
+  font-size: 4.1rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
+}
+
+h2 {
+  font-size: 40px;
   font-size: 2.5rem;
+  line-height: 37.5px;
+  line-height: 2.34375rem;
+  margin-top: 75px;
+  margin-top: 4.6875rem;
+  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
-.h2, h2 {
+h3 {
+  font-size: 32px;
   font-size: 2rem;
+  line-height: 37.5px;
+  line-height: 2.34375rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 12.5px;
+  margin-bottom: 0.78125rem;
 }
 
-.h3, h3 {
-  font-size: 1.75rem;
+h4 {
+  font-size: 19.552px;
+  font-size: 1.222rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-bottom: 6.25px;
+  margin-bottom: 0.390625rem;
 }
 
-.h4, h4 {
-  font-size: 1.5rem;
-}
-
-.h5, h5 {
-  font-size: 1.25rem;
-}
-
-.h6, h6 {
+h5 {
+  font-size: 16px;
   font-size: 1rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  margin-top: 62.5px;
+  margin-top: 3.90625rem;
+  margin-bottom: 12.5px;
+  margin-bottom: 0.78125rem;
 }
 
-p, .p {
+h6 {
+  font-size: 16px;
   font-size: 1rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  margin-top: 62.5px;
+  margin-top: 3.90625rem;
+  margin-bottom: 12.5px;
+  margin-bottom: 0.78125rem;
 }
 
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 97.6px;
+    font-size: 6.1rem;
+    line-height: 91px;
+    line-height: 5.0555555556rem;
+    margin-top: 78px;
+    margin-top: 4.3333333333rem;
+    margin-bottom: 26px;
+    margin-bottom: 1.4444444444rem;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 45.5px;
+    line-height: 2.5277777778rem;
+    margin-top: 104px;
+    margin-top: 5.7777777778rem;
+    margin-bottom: 26px;
+    margin-bottom: 1.4444444444rem;
+  }
+
+  h3 {
+    font-size: 35.68px;
+    font-size: 2.23rem;
+    line-height: 33.8px;
+    line-height: 1.8777777778rem;
+    margin-top: 52px;
+    margin-top: 2.8888888889rem;
+    margin-bottom: 26px;
+    margin-bottom: 1.4444444444rem;
+  }
+
+  h4 {
+    font-size: 19.552px;
+    font-size: 1.222rem;
+    line-height: 26px;
+    line-height: 1.4444444444rem;
+    margin-top: 26px;
+    margin-top: 1.4444444444rem;
+    margin-bottom: 13px;
+    margin-bottom: 0.7222222222rem;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.4444444444rem;
+    margin-top: 65px;
+    margin-top: 3.6111111111rem;
+    margin-bottom: 13px;
+    margin-bottom: 0.7222222222rem;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.4444444444rem;
+    margin-top: 65px;
+    margin-top: 3.6111111111rem;
+    margin-bottom: 13px;
+    margin-bottom: 0.7222222222rem;
+  }
+}
 /* Makes text upper case*/
 .ucase {
   text-transform: uppercase;
@@ -2197,19 +2315,16 @@ p, .p {
   text-transform: capitalize;
 }
 
-.text-left {
+.ta-left {
   text-align: left;
 }
-
-.text-center {
+.ta-center {
   text-align: center;
 }
-
-.text-right {
+.ta-right {
   text-align: right;
 }
-
-.text-justify {
+.ta-justify {
   text-align: justify;
 }
 
@@ -2226,7 +2341,7 @@ p, .p {
 }
 
 .no-underline {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .italic {
@@ -3539,6 +3654,52 @@ img.scale-down {
 
 .bc-red {
   border-color: red !important;
+}
+
+.b {
+  border-style: solid;
+}
+.b-all {
+  border-top-width: 1px !important;
+  border-bottom-width: 1px !important;
+  border-left-width: 1px !important;
+  border-right-width: 1px !important;
+}
+.b-top {
+  border-top-width: 1px;
+}
+.b-bottom {
+  border-bottom-width: 1px;
+}
+.b-v {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+.b-left {
+  border-left-width: 1px;
+}
+.b-right {
+  border-right-width: 1px;
+}
+.b-h {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.solid {
+  border-style: solid !important;
+}
+
+.dash {
+  border-style: dashed !important;
+}
+
+.dot {
+  border-style: dotted !important;
+}
+
+.round {
+  border-radius: var(--default-radius);
 }
 
 .border {

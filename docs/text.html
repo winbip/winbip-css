@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovoTheme</title>
+
+    <link href="assets/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/skpaul/monogrid@0.0.1/monogrid.min.css">
+    <link rel="stylesheet" href="../theme-dark.css">
+    <link rel="stylesheet" href="../winbip.min.css">
+
+    
+</head>
+<body>
+    <div class="master-wrapper">
+        <header>
+           
+        </header>
+        <main class="">
+          
+            <div class="container-fluid flex fw-wrap">
+
+                    <div class="content">
+                        <h1>This is heading 1</h1>
+                        <h2>This is heading 1</h2>
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                       </p>
+
+                    </div> <!-- .content ends -->
+
+                  
+            </div>
+        </main>
+
+        <footer>
+          
+        </footer>
+    </div>
+  
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/prism.js"></script>
+    <script>
+
+
+        $(document).ready(function(){         
+            $('.left-nav a').click(function(e){
+                e.preventDefault();
+                let link = $(this);
+                let parent = $(link.closest('li'));
+                let child = link.next();
+                if (child.length > 0) {
+                    if(parent.hasClass('expanded')){
+                        child.slideUp(500);
+                        parent.removeClass('expanded').removeClass('bg-subtle');
+                    }
+                   else{
+                    child.slideDown(500);
+                        parent.addClass('expanded').addClass('bg-subtle',1000);
+                   }
+                } else {
+                   
+                    window.location = link.attr('href');
+                }
+            });
+
+            $('#hambItem').click(function(){
+                toggleHamb();
+            });
+            $('#hambClose').click(function(){
+                toggleHamb();
+            });
+
+            function toggleHamb() {
+                    // var mainTopNav = document.getElementById("mainTopNav");
+                    mainTopNav = $("#mainTopNav");
+                    var hambItem = document.getElementById("hambItem");
+                    var hambClose = document.getElementById("hambClose");
+
+                    // $('#top-nav').hide(600);
+
+                    if(mainTopNav.hasClass('nav-open')){
+                        mainTopNav.hide(700).removeClass('nav-open');
+                    }
+                    else{
+                        mainTopNav.show(700).addClass('nav-open');
+                    };
+                    // if (x.style.display == "block") {
+                    //     x.style.display = "none";
+                    // } else {
+                    //     x.style.display = "block";
+                    // }
+
+
+                    if (hambClose.style.display == "block") {
+                        hambClose.style.display = "none";
+                    } else {
+                        hambClose.style.display = "block";
+                    }
+
+                    if (hambItem.style.display == "block") {
+                        hambItem.style.display = "none";
+                    } else {
+                        hambItem.style.display = "block";
+                    }
+            }
+        });
+    </script>
+</body>
+</html>

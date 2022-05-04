@@ -3,30 +3,42 @@
 //https://24ways.org/2016/responsive-display-text/
 //https://betterwebtype.com/articles/2019/06/16/5-keys-to-accessible-web-typography/#:~:text=Generally%20speaking%20(and%20there%20are,inherited%20size)%5B%5E2%5D.
 
+
 *{
-    
-    -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 25px;
+    line-height: 1.5625rem; //16px = 1rem
+    @include large(){
+        line-height: 26px;
+        line-height: 1.4444444444rem;
+    }
 }
 
 html{
-   
     accent-color: var(--accent-color);
-    font-size: 100%; //in most browsers, this defaults to 16px.
-    
+    // font-size: 100%; //in most browsers, this defaults to 16px.
+    font-size: 16px;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
     /*
         //Another option to set font-size:
         font-size: 62.5%; // (62.5/100) * 16px = 10px 
         //In order to seamlessly convert pixels to rem, we can set the root sizing to 62.5%. That means 1rem = 10px:
     */
     @include large{
-        // font-size: 112.5%; // = 18px in most browsers.
+        //font-size: 112.5%; // = 18px in most browsers.
+        font-size: 18px;
+        font-size: 1.125rem;
     }
+}
 
-
+*,*::before,*::after {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -38,12 +50,12 @@ html, body {
 }
 
 body{
-    font-size: 1rem;
+    overflow-x: hidden;
     font-weight: var(--default-font-weight);
     text-align: left;
-    line-height: var(--line-height-sm);
+    // line-height: var(--line-height-sm);
     @include large{
-        line-height: var(--line-height-lg);
+        // line-height: var(--line-height-lg);
     }
     color: var(--default-foreground);
 }

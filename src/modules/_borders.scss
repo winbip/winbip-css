@@ -1,3 +1,48 @@
+.b{
+    &-all{
+        border-top-width: 1px !important;
+        border-bottom-width: 1px !important;
+        border-left-width: 1px !important;
+        border-right-width: 1px !important;
+    }
+    &-top{
+        border-top-width: 1px;
+    }
+    &-bottom{
+        border-bottom-width: 1px;
+    }
+    &-v{
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+
+    &-left{
+        border-left-width: 1px;
+    }
+    &-right{
+        border-right-width: 1px;
+    }
+    &-h{
+        border-left-width: 1px;
+        border-right-width: 1px;
+    }
+    border-style: solid;
+}
+
+.solid{
+    border-style: solid !important;
+}
+.dash{
+    border-style: dashed !important;
+}
+.dot{
+    border-style: dotted !important;
+}
+
+.round{
+    border-radius: var(--default-radius);
+}
+
 .border{
     /* border-width setting ------------>*/ 
     border-width: 1px;
