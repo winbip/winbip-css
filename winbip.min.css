@@ -71,7 +71,6 @@ html, body {
 }
 
 body {
-  overflow-x: hidden;
   font-weight: var(--default-font-weight);
   text-align: left;
   color: var(--default-foreground);
@@ -2172,10 +2171,6 @@ h1 {
   font-size: 4.1rem;
   line-height: 50px;
   line-height: 3.125rem;
-  margin-top: 50px;
-  margin-top: 3.125rem;
-  margin-bottom: 25px;
-  margin-bottom: 1.5625rem;
 }
 
 h2 {
@@ -2183,10 +2178,6 @@ h2 {
   font-size: 2.5rem;
   line-height: 37.5px;
   line-height: 2.34375rem;
-  margin-top: 75px;
-  margin-top: 4.6875rem;
-  margin-bottom: 25px;
-  margin-bottom: 1.5625rem;
 }
 
 h3 {
@@ -2194,10 +2185,6 @@ h3 {
   font-size: 2rem;
   line-height: 37.5px;
   line-height: 2.34375rem;
-  margin-top: 50px;
-  margin-top: 3.125rem;
-  margin-bottom: 12.5px;
-  margin-bottom: 0.78125rem;
 }
 
 h4 {
@@ -2205,10 +2192,6 @@ h4 {
   font-size: 1.222rem;
   line-height: 25px;
   line-height: 1.5625rem;
-  margin-top: 0px;
-  margin-top: 0rem;
-  margin-bottom: 6.25px;
-  margin-bottom: 0.390625rem;
 }
 
 h5 {
@@ -2216,10 +2199,6 @@ h5 {
   font-size: 1rem;
   line-height: 25px;
   line-height: 1.5625rem;
-  margin-top: 62.5px;
-  margin-top: 3.90625rem;
-  margin-bottom: 12.5px;
-  margin-bottom: 0.78125rem;
 }
 
 h6 {
@@ -2227,10 +2206,6 @@ h6 {
   font-size: 1rem;
   line-height: 25px;
   line-height: 1.5625rem;
-  margin-top: 62.5px;
-  margin-top: 3.90625rem;
-  margin-bottom: 12.5px;
-  margin-bottom: 0.78125rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -2239,10 +2214,6 @@ h6 {
     font-size: 6.1rem;
     line-height: 91px;
     line-height: 5.0555555556rem;
-    margin-top: 78px;
-    margin-top: 4.3333333333rem;
-    margin-bottom: 26px;
-    margin-bottom: 1.4444444444rem;
   }
 
   h2 {
@@ -2250,10 +2221,6 @@ h6 {
     font-size: 3rem;
     line-height: 45.5px;
     line-height: 2.5277777778rem;
-    margin-top: 104px;
-    margin-top: 5.7777777778rem;
-    margin-bottom: 26px;
-    margin-bottom: 1.4444444444rem;
   }
 
   h3 {
@@ -2261,10 +2228,6 @@ h6 {
     font-size: 2.23rem;
     line-height: 33.8px;
     line-height: 1.8777777778rem;
-    margin-top: 52px;
-    margin-top: 2.8888888889rem;
-    margin-bottom: 26px;
-    margin-bottom: 1.4444444444rem;
   }
 
   h4 {
@@ -2272,10 +2235,6 @@ h6 {
     font-size: 1.222rem;
     line-height: 26px;
     line-height: 1.4444444444rem;
-    margin-top: 26px;
-    margin-top: 1.4444444444rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.7222222222rem;
   }
 
   h5 {
@@ -2283,10 +2242,6 @@ h6 {
     font-size: 1rem;
     line-height: 26px;
     line-height: 1.4444444444rem;
-    margin-top: 65px;
-    margin-top: 3.6111111111rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.7222222222rem;
   }
 
   h6 {
@@ -2294,10 +2249,6 @@ h6 {
     font-size: 1rem;
     line-height: 26px;
     line-height: 1.4444444444rem;
-    margin-top: 65px;
-    margin-top: 3.6111111111rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.7222222222rem;
   }
 }
 /* Makes text upper case*/
