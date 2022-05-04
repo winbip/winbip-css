@@ -1,8 +1,4 @@
 
-
-
-
-
 @mixin create-margin-main($class:"", $property:"") {
 
     @for $i from 1 through 9 {
@@ -19,7 +15,6 @@
         }
     }
 }
-
 
 @mixin create-margin($prefix:"", $property:"") {
     .#{$prefix}auto {
@@ -118,13 +113,11 @@
     }
 }
 
-
 @include create-margin("ma", "margin"); //will create .m-* {margin:*rem;}
 @include create-margin("mt", "margin-top"); 
 @include create-margin("mb", "margin-bottom"); 
 @include create-margin("ml", "margin-left"); 
 @include create-margin("mr", "margin-right"); 
-
  
 @mixin create-double-margin($prefix:"", $property1:"", $property2:"") {
     .#{$prefix}auto {
@@ -235,7 +228,6 @@
         }
     }
 }
-
 
 @include create-double-margin("mv", "margin-top","margin-bottom"); 
 @include create-double-margin("mh", "margin-left","margin-right"); 

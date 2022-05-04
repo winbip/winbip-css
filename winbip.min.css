@@ -50,6 +50,7 @@ html, body {
 }
 
 body {
+  font-size: 1rem;
   font-weight: var(--default-font-weight);
   text-align: left;
   line-height: var(--line-height-sm);
@@ -3294,10 +3295,6 @@ table tbody tr:hover td {
   right: 0;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .box-shadow {
   -webkit-box-shadow: 0 0 10px #807e7e;
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -3305,12 +3302,6 @@ table tbody tr:hover td {
   /* Firefox 3.5 - 3.6 */
   box-shadow: 0 0 4px #807e7e;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-}
-
-/*To use with label*/
-.margin-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .scale-down-wrapper {
@@ -3323,26 +3314,6 @@ img.scale-down {
   width: 100%;
   object-fit: scale-down;
   object-position: 0 0;
-}
-
-.error {
-  border-color: red !important;
-}
-
-.red-border {
-  border-color: red !important;
-}
-
-.relative {
-  position: relative;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.absolute {
-  position: absolute;
 }
 
 .previewPage .wrapper {
@@ -3556,6 +3527,18 @@ img.scale-down {
 
 .bc-muted {
   border-color: var(--muted-border);
+}
+
+.bg-red {
+  background-color: red !important;
+}
+
+.fg-red {
+  color: red !important;
+}
+
+.bc-red {
+  border-color: red !important;
 }
 
 .border {
@@ -3778,6 +3761,18 @@ img.scale-down {
 }
 .d-table-cell {
   display: table-cell !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
 }
 
 /*# sourceMappingURL=winbip.min.css.map */
