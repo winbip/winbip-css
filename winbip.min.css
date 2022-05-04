@@ -3649,54 +3649,59 @@ img.scale-down {
 }
 
 .fullheight {
-  width: 100% !important;
+  height: 100% !important;
+}
+@media screen and (max-width: 991px) {
+  .fullheight-sm {
+    height: 100% !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fullheight-lg {
+    height: 100% !important;
+  }
 }
 
 .fitcontent {
-  width: -moz-fit-content;
+  width: -moz-fit-content !important;
   width: fit-content !important;
+}
+@media screen and (max-width: 991px) {
+  .fitcontent-sm {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fitcontent-lg {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
 }
 
 .mincontent {
   width: min-content !important;
 }
+@media screen and (max-width: 991px) {
+  .mincontent-sm {
+    width: min-content !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mincontent-lg {
+    width: min-content !important;
+  }
+}
 
 .maxcontent {
   width: max-content !important;
 }
-
 @media screen and (max-width: 991px) {
-  .fullwidth-sm {
-    width: 100% !important;
-  }
-
-  .fitcontent-sm {
-    width: -moz-fit-content;
-    width: fit-content !important;
-  }
-
-  .mincontent-sm {
-    width: min-content !important;
-  }
-
   .maxcontent-sm {
     width: max-content !important;
   }
 }
 @media only screen and (min-width: 992px) {
-  .fullwidth-lg {
-    width: 100% !important;
-  }
-
-  .fitcontent-lg {
-    width: -moz-fit-content;
-    width: fit-content !important;
-  }
-
-  .mincontent-lg {
-    width: min-content !important;
-  }
-
   .maxcontent-lg {
     width: max-content !important;
   }
