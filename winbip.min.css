@@ -1,3 +1,76 @@
+/*
+  Modern Reset
+  See https://hankchizljaw.com/wrote/a-modern-css-reset/
+*/
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -23,60 +96,153 @@
         }
     }
 */
-/*this must be on 2nd top*/
-*, :after, :before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap'); */
+:root {
+  --fallback-font: sans-serif;
+  --default-font: "Inter", var(--fallback-font);
+  --default-font-weight: normal;
+  --body-line-height-sm: 1.75;
+  --body-line-height-lg: 1.75;
+  --heading-line-height-sm: 1.2;
+  --heading-line-height-lg: 1.2;
+  --heading-letter-spacing: -0.031rem;
+  --h2-font-size-sm: 1.602rem;
+  --h2-font-size-lg: 2.074rem;
+  --h2-letter-spacing: var(--heading-letter-spacing);
+  --h2-font-weight: 500;
+  --h2-line-height-sm: var(--heading-line-height-sm);
+  --h2-line-height-lg: var(--heading-line-height-lg);
+  --h2-margin-sm: 0 0 0 0;
+  --h2-margin-lg: 0 0 0 0;
+  --h3-font-size-sm: 1.424rem;
+  --h3-font-size-lg: 1.728rem;
+  --h3-letter-spacing: var(--heading-letter-spacing);
+  --h3-font-weight: 300;
+  --h3-line-height-sm: var(--heading-line-height-sm);
+  --h3-line-height-lg: var(--heading-line-height-lg);
+  --h3-margin-sm: 0 0 0 0;
+  --h3-margin-lg: 0 0 0 0;
+  --h4-font-size-sm: 1.266rem;
+  --h4-font-size-lg: 1.44rem;
+  --h4-letter-spacing: var(--heading-letter-spacing);
+  --h4-font-weight: 400;
+  --h4-line-height-sm: var(--heading-line-height-sm);
+  --h4-line-height-lg: var(--heading-line-height-lg);
+  --h4-margin-sm: 0 0 0 0;
+  --h4-margin-lg: 0 0 0 0;
+  --h5-font-size: 1.2rem;
+  --h5-letter-spacing: 0.05rem;
+  --h5-line-height-sm: var(--heading-line-height-sm);
+  --h5-line-height-lg: var(--heading-line-height-lg);
+  --h5-margin-sm: 0 0 0 0;
+  --h5-margin-lg: 0 0 0 0;
+  --h6-font-size: 1rem;
+  --h6-letter-spacing: 0.05rem;
+  --h6-line-height-sm: var(--heading-line-height-sm);
+  --h6-line-height-lg: var(--heading-line-height-lg);
+  --h6-margin-sm: 0 0 0 0;
+  --h6-margin-lg: 0 0 0 0;
+  --p-default-margin: 0 0 1rem 0;
+  --brand-color: green;
+  --accent-color: #316dca;
+  --form-accent-color: rgb(12, 216, 12);
+  --default-hyperlink-color: #539bf5;
+  /* Default Background color */
+  --dafault-background: #1c2128;
+  --default-foreground: #adbac7;
+  --default-border: #444c56;
+  --muted-background: #22272E;
+  --muted-foreground: #768390;
+  --muted-border: #373e47;
+  /* 
+      font-size: 62.5%; // (62.5/100) * 16px = 10px 
+   */
+  --default-radius: 0.25rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  line-height: var(--default-line-height-sm);
+/*
+  Global :root variables, for those independent of themes
+*/
+:root {
+  /* Typography */
+  --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+  --font-body: Inter, var(--font-fallback);
+  --font-heading: Inter, var(--font-fallback);
+  --font-code: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+  --base-font-size: 100%;
+  --base-line-height: 1.2;
+  --intermediate-line-height: 1.5;
+  --heading-line-height: var(--base-line-height);
+  --heading-letter-spacing: -0.031rem;
+  --font-content-line-height: 1.75;
+  --font-body-strong-weight: 600;
+  /* based on the following type-scale https://type-scale.com/?size=16&scale=1.200&text=MDN%20Web%20Docs&font=Inter&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false */
+  --type-heading-h1-font-size: 2.488rem;
+  --type-heading-h2-font-size: 2.074rem;
+  --type-heading-h3-font-size: 1.728rem;
+  --type-heading-h4-font-size: 1.44rem;
+  --type-heading-h5-font-size: 1.2rem;
+  --type-base-font-size-rem: 1rem;
+  --type-smaller-font-size: 0.833rem;
+  --type-tiny-font-size: 0.694rem;
+  /* based on the following type-scale https://type-scale.com/?size=16&scale=1.125&text=MDN%20Web%20Docs&font=Inter&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false */
+  --type-heading-h1-font-size-mobile: 1.802rem;
+  --type-heading-h2-font-size-mobile: 1.602rem;
+  --type-heading-h3-font-size-mobile: 1.424rem;
+  --type-heading-h4-font-size-mobile: 1.266rem;
+  --type-emphasis-m: var(--font-body-strong-weight) var(--type-smaller-font-size) / 1.23 var(--font-body);
+  --type-label-s: 600 var(--type-tiny-font-size) / 1.2 var(--font-heading);
+  --type-heading-h1: 600 var(--type-heading-h1-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+  --type-heading-h2: 500 var(--type-heading-h2-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+  --type-heading-h3: 300 var(--type-heading-h3-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+  --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+  --type-heading-h5: 400 var(--type-heading-h5-font-size) / var(--heading-line-height) var(--font-heading);
+  --type-heading-h6: 400 var(--type-base-font-size-rem) / var(--heading-line-height) var(--font-heading);
+  --type-article-p: 400 var(--type-base-font-size-rem) / var(--font-content-line-height) var(--font-body);
+  /* Features */
+  --elem-radius: 0.25rem;
+  --focus-effect: 0 0 0 3px var(--accent-primary-engage);
+  --form-elem-height: 2rem;
 }
-@media only screen and (min-width: 992px) {
-  * {
-    line-height: var(--default-line-height-lg);
+
+@media screen and (min-width: 769px) {
+  :root {
+    --base-line-height: 1.75;
+    --type-heading-h1:600 var(--type-heading-h1-font-size)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h2: 500 var(--type-heading-h2-font-size)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h3: 400 var(--type-heading-h3-font-size)/var(--heading-line-height) var(--font-heading);
+    --type-heading-h4: 400 var(--type-heading-h4-font-size)/var(--heading-line-height) var(--font-heading) ;
   }
 }
-
 html {
-  scroll-behavior: smooth;
   font-size: 16px;
   font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  /*
-      //Another option to set font-size:
-      font-size: 62.5%; // (62.5/100) * 16px = 10px 
-      //In order to seamlessly convert pixels to rem, we can set the root sizing to 62.5%. That means 1rem = 10px:
-  */
 }
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 112.5%;
   }
 }
 
 html, body {
-  font-family: var(--default-fontfamily);
   width: 100%;
   min-height: 100%;
-  /*Custom properties with fallbacks for use when the property has not been set*/
-  background-color: var(--dafault-background, #FFFFFF);
 }
 
 body {
+  background-color: var(--dafault-background, #FFFFFF);
+  font-family: var(--default-font);
   font-weight: var(--default-font-weight);
   text-align: left;
-  line-height: var(--line-height-sm);
+  line-height: var(--body-line-height-sm);
   color: var(--default-foreground);
 }
 @media only screen and (min-width: 992px) {
   body {
-    line-height: var(--line-height-lg);
+    line-height: var(--body-line-height-lg);
   }
 }
 
@@ -2190,52 +2356,105 @@ h1, h2, h3 {
 }
 
 h1 {
+  line-height: 1.2;
+  font-size: calc(0.5rem + 2.5vmin);
   font: var(--type-heading-h1);
-  margin-bottom: 2rem;
   word-break: break-word;
 }
 
-@media screen and (min-width: 769px) {
-  h1 {
-    font: var(--type-heading-h1);
-  }
-}
 h2 {
   font: var(--type-heading-h2);
-  margin: 4rem 0 0.5rem;
 }
 
 h3 {
   font: var(--type-heading-h3);
-  margin: 2rem 0 0.5rem;
 }
 
-h2 ~ div ~ h3, h2 ~ h3 {
-  margin-top: 1rem;
+h3 {
+  font-size: var(--h3-font-size-sm);
+  letter-spacing: var(--h3-letter-spacing);
+  font-weight: var(--h3-font-weight);
+  line-height: var(--h3-line-height-sm);
+  margin: var(--h3-margin-sm);
+}
+@media only screen and (min-width: 992px) {
+  h3 {
+    font-size: var(--h3-font-size-lg);
+  }
+}
+@media only screen and (min-width: 992px) {
+  h3 {
+    line-height: var(--h3-line-height-lg);
+  }
+}
+@media only screen and (min-width: 992px) {
+  h3 {
+    margin: var(--h3-margin-lg);
+  }
 }
 
 h4 {
-  font: var(--type-heading-h4);
-  letter-spacing: 0.5px;
-  margin: 2rem 0 1rem;
+  font-size: var(--h4-font-size-sm);
+  letter-spacing: var(--h4-letter-spacing);
+  font-weight: var(--h4-font-weight);
+  line-height: var(--h4-line-height-sm);
+  margin: var(--h4-margin-sm);
+}
+@media only screen and (min-width: 992px) {
+  h4 {
+    font-size: var(--h4-font-size-lg);
+  }
+}
+@media only screen and (min-width: 992px) {
+  h4 {
+    line-height: var(--h4-line-height-lg);
+  }
+}
+@media only screen and (min-width: 992px) {
+  h4 {
+    margin: var(--h4-margin-lg);
+  }
 }
 
 h5 {
-  font: var(--type-heading-h5);
+  font-size: var(--h5-font-size);
+  letter-spacing: var(--h5-letter-spacing);
+  font-weight: 400;
+  line-height: var(--h5-line-height-sm);
+  margin: var(--h5-margin-sm);
 }
-
-h5, h6 {
-  letter-spacing: 1.5px;
-  margin: 2rem 0 1rem;
+@media only screen and (min-width: 992px) {
+  h5 {
+    line-height: var(--h5-line-height-lg);
+  }
+}
+@media only screen and (min-width: 992px) {
+  h5 {
+    margin: var(--h5-margin-lg);
+  }
 }
 
 h6 {
-  font: var(--type-heading-h6);
+  font-size: var(--h6-font-size);
+  letter-spacing: var(--h6-letter-spacing);
+  font-weight: 400;
+  line-height: var(--h6-line-height-sm);
+  margin: var(--h6-margin-sm);
+}
+@media only screen and (min-width: 992px) {
+  h6 {
+    line-height: var(--h6-line-height-lg);
+  }
+}
+@media only screen and (min-width: 992px) {
+  h6 {
+    margin: var(--h6-margin-lg);
+  }
 }
 
 p {
-  font: var(--type-article-p);
-  margin-bottom: 1.8rem;
+  font-size: 1rem;
+  margin: var(--p-default-margin);
 }
 
 /* Makes text upper case*/

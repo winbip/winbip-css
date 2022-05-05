@@ -1,34 +1,187 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 :root {
-   
-    // --font-family: 'Source Sans Pro', sans-serif;
-    // // --font-family: 'Montserrat', sans-serif;
-    // --font-size-root: 16px;
-    // --font-size-body: 1rem;
-    // --font-weight: 400;
-    // --line-height-lg: 1.5;
-    // --line-height-sm: 1.15;
+    --fallback-font: sans-serif;
+    --default-font: 'Inter', var(--fallback-font);
+    --default-font-weight: normal;
+
+    --body-line-height-sm: 1.75;
+    --body-line-height-lg: 1.75;
+
+    --heading-line-height-sm: 1.2;          //applied to h1, h2, h3, h4, h5, h6
+    --heading-line-height-lg: 1.2;          //applied to h1, h2, h3, h4, h5, h6
+    --heading-letter-spacing: -0.031rem;    //applied to h1, h2, h3, h4, h5, h6
+
+
+    --h2-font-size-sm: 1.602rem;
+    --h2-font-size-lg: 2.074rem;
+    --h2-letter-spacing: var(--heading-letter-spacing);
+    --h2-font-weight: 500;
+    --h2-line-height-sm: var(--heading-line-height-sm); //if not set other value, heading-line-height-sm will be applied. 
+    --h2-line-height-lg: var(--heading-line-height-lg); //if not set other value, heading-line-height-lg will be applied. 
+    --h2-margin-sm: 0 0 0 0;
+    --h2-margin-lg: 0 0 0 0;
+
+
+    --h3-font-size-sm: 1.424rem;
+    --h3-font-size-lg: 1.728rem;
+    --h3-letter-spacing: var(--heading-letter-spacing);
+    --h3-font-weight: 300;
+    --h3-line-height-sm: var(--heading-line-height-sm); //if not set other value, heading-line-height-sm will be applied. 
+    --h3-line-height-lg: var(--heading-line-height-lg); //if not set other value, heading-line-height-lg will be applied. 
+    --h3-margin-sm: 0 0 0 0;
+    --h3-margin-lg: 0 0 0 0;
+
+
+    --h4-font-size-sm: 1.266rem;
+    --h4-font-size-lg: 1.44rem;
+    --h4-letter-spacing: var(--heading-letter-spacing);
+    --h4-font-weight: 400;
+    --h4-line-height-sm: var(--heading-line-height-sm); //if not set other value, heading-line-height-sm will be applied. 
+    --h4-line-height-lg: var(--heading-line-height-lg); //if not set other value, heading-line-height-lg will be applied. 
+    --h4-margin-sm: 0 0 0 0;
+    --h4-margin-lg: 0 0 0 0;
+
+
+
+    --h5-font-size: 1.2rem; //Does not have any responsive size.
+    --h5-letter-spacing: 0.05rem; //var(--heading-letter-spacing);
+    --h5-line-height-sm: var(--heading-line-height-sm); //if not set other value, heading-line-height-sm will be applied. 
+    --h5-line-height-lg: var(--heading-line-height-lg); //if not set other value, heading-line-height-lg will be applied. 
+    --h5-margin-sm: 0 0 0 0;
+    --h5-margin-lg: 0 0 0 0;
+
+
+    --h6-font-size: 1rem; //same as default body font size
+    --h6-letter-spacing: 0.05rem; //var(--heading-letter-spacing);
+    --h6-line-height-sm: var(--heading-line-height-sm); //if not set other value, heading-line-height-sm will be applied. 
+    --h6-line-height-lg: var(--heading-line-height-lg); //if not set other value, heading-line-height-lg will be applied. 
+    --h6-margin-sm: 0 0 0 0;
+    --h6-margin-lg: 0 0 0 0;
+
     
-    // --border-radius-main: 0.4rem;
+    --p-default-margin : 0 0 1rem 0; //applied to paragraph
 
-    // --color-canvas-default: #22272e;  
-    // --color-canvas-overlay: #2d333b;   
-    // --color-canvas-inset: #1c2128;
-    // --color-canvas-subtle: #2d333b; 
+    --brand-color: green;
+    --accent-color: #316dca;
+    --form-accent-color: rgb(12, 216, 12);
 
-    // --color-fg-default: #adbac7;  
-    // --color-fg-muted: #768390;  
-    // --color-fg-subtle: #545d68;
-    // --color-fg-on-emphasis: #cdd9e5;
+    --default-hyperlink-color: #539bf5;
 
-    // --color-border-default: #444c56; 
-    // --color-border-muted: #373e47; 
-    // --color-border-subtle: rgba(205,217,229,0.1);
+    /* Default Background color */
+    --dafault-background: #1c2128;
+    --default-foreground: #adbac7;
+    --default-border: #444c56;
 
-    // --accent-color: #316dca;
-    // --color-accent-fg: #539bf5;
-    // --color-accent-emphasis: #316dca;
-    // --color-accent-muted: rgba(65,132,228,0.4);
-    // --color-accent-subtle: rgba(65,132,228,0.15);
+    --muted-background: #22272E;
+    --muted-foreground: #768390;
+    --muted-border: #373e47;
 
-    // --form-accent-color: rgb(12, 216, 12);
+    /* 
+        font-size: 62.5%; // (62.5/100) * 16px = 10px 
+     */
+    
+    // --default-line-height-for-heading: 1.2;
+    // --h1-font-size-sm: 1.802rem;
+    // --h1-font-size-lg: 2.488rem;
+
+
+
+
+
+ 
+
+    --default-radius: 0.25rem;
+
+}
+
+
+/*
+  Global :root variables, for those independent of themes
+*/
+:root {
+    /* Typography */
+    
+
+    --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+  
+    --font-body: Inter, var(--font-fallback);
+    --font-heading: Inter, var(--font-fallback);
+    --font-code: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+      monospace;
+  
+    --base-font-size: 100%;
+    --base-line-height: 1.2;
+    --intermediate-line-height: 1.5;
+    --heading-line-height: var(--base-line-height);
+    --heading-letter-spacing: -0.031rem;
+    --font-content-line-height: 1.75;
+    --font-body-strong-weight: 600;
+  
+    /* based on the following type-scale https://type-scale.com/?size=16&scale=1.200&text=MDN%20Web%20Docs&font=Inter&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false */
+   
+    // --h1-font-size-sm: 1.802rem;
+    // --h1-font-size-lg: 2.488rem;
+    // --h2-font-size-lg: 2.074rem;
+    // --h2-font-size-sm: 1.602rem;
+
+
+    // --h4-font-size-lg: 1.44rem;
+    // --h4-font-size-sm: 1.266rem;
+
+    --type-heading-h1-font-size: 2.488rem;
+    --type-heading-h2-font-size: 2.074rem;
+    --type-heading-h3-font-size: 1.728rem;
+    --type-heading-h4-font-size: 1.44rem;
+    --type-heading-h5-font-size: 1.2rem;
+    --type-base-font-size-rem: 1rem;
+    --type-smaller-font-size: 0.833rem;
+    --type-tiny-font-size: 0.694rem;
+  
+    /* based on the following type-scale https://type-scale.com/?size=16&scale=1.125&text=MDN%20Web%20Docs&font=Inter&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false */
+    --type-heading-h1-font-size-mobile: 1.802rem;
+    --type-heading-h2-font-size-mobile: 1.602rem;
+    --type-heading-h3-font-size-mobile: 1.424rem;
+    --type-heading-h4-font-size-mobile: 1.266rem;
+  
+    --type-emphasis-m: var(--font-body-strong-weight) var(--type-smaller-font-size) / 1.23 var(--font-body);
+    --type-label-s: 600 var(--type-tiny-font-size) / 1.2 var(--font-heading);
+  
+    --type-heading-h1: 600 var(--type-heading-h1-font-size-mobile) /  var(--heading-line-height) var(--font-heading);
+    --type-heading-h2: 500 var(--type-heading-h2-font-size-mobile) /  var(--heading-line-height) var(--font-heading);
+    --type-heading-h3: 300 var(--type-heading-h3-font-size-mobile) /  var(--heading-line-height) var(--font-heading);
+    --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile) /  var(--heading-line-height) var(--font-heading);
+    --type-heading-h5: 400 var(--type-heading-h5-font-size) / var(--heading-line-height) var(--font-heading);
+    --type-heading-h6: 400 var(--type-base-font-size-rem) / var(--heading-line-height) var(--font-heading);
+    --type-article-p: 400 var(--type-base-font-size-rem) / var(--font-content-line-height) var(--font-body);
+  
+    //   @media screen and (min-width: $screen-md) {
+//     :root {
+//       --type-heading-h1: 600 var(--type-heading-h1-font-size) / var(--heading-line-height) var(--font-heading);
+//       --type-heading-h2: 500 var(--type-heading-h2-font-size) / var(--heading-line-height) var(--font-heading);
+//       --type-heading-h3: 300 var(--type-heading-h3-font-size) / var(--heading-line-height) var(--font-heading);
+//       --type-heading-h4: 400 var(--type-heading-h4-font-size) / var(--heading-line-height) var(--font-heading);
+//     }
+//   }
+
+  
+    /* Features */
+    --elem-radius: 0.25rem;
+    --focus-effect: 0 0 0 3px var(--accent-primary-engage);
+    --form-elem-height: 2rem;
+  }
+  
+
+
+  @media screen and (min-width: 769px) {
+    :root {
+        --base-line-height: 1.75;
+        --type-heading-h1:600 var(--type-heading-h1-font-size)/var(--heading-line-height) var(--font-heading);
+        --type-heading-h2: 500 var(--type-heading-h2-font-size)/var(--heading-line-height) var(--font-heading);
+        --type-heading-h3: 400 var(--type-heading-h3-font-size)/var(--heading-line-height) var(--font-heading);
+        --type-heading-h4: 400 var(--type-heading-h4-font-size)/var(--heading-line-height) var(--font-heading)
+    }
 }

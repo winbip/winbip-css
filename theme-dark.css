@@ -28,10 +28,6 @@
     --muted-foreground: #768390;
     --muted-border: #373e47;
 
-    /* --default-fontfamily: 'Source Sans Pro', sans-serif; */
-    --default-fontfamily: 'Inter', sans-serif;
-    --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
-    --default-font: var(--default-fontfamily),var(--font-fallback);
     /* 
         font-size: 62.5%; // (62.5/100) * 16px = 10px 
      */
@@ -59,16 +55,21 @@
 
 
 :root {
+    
+    /* --default-fontfamily: 'Inter', sans-serif;
+    --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+    --default-font: var(--default-fontfamily),var(--font-fallback); */
+
     --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
     --font-body: Inter,var(--font-fallback);
     --font-heading: Inter,var(--font-fallback);
     --font-code: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
     --base-font-size: 100%;
-    --base-line-height: 1.2;
+    --base-line-height: 1.5;
     --intermediate-line-height: 1.5;
     --heading-line-height: var(--base-line-height);
     --heading-letter-spacing: -0.031rem;
-    --font-content-line-height: 1.75;
+    --default-line-height-for-body: 1.75;
     --font-body-strong-weight: 600;
     --type-heading-h1-font-size: 2.488rem;
     --type-heading-h2-font-size: 2.074rem;
@@ -90,7 +91,7 @@
     --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile)/var(--heading-line-height) var(--font-heading);
     --type-heading-h5: 400 var(--type-heading-h5-font-size)/var(--heading-line-height) var(--font-heading);
     --type-heading-h6: 600 var(--type-base-font-size-rem)/var(--heading-line-height) var(--font-heading);
-    --type-article-p: 400 var(--type-base-font-size-rem)/var(--font-content-line-height) var(--font-body);
+    --type-article-p: 400 var(--type-base-font-size-rem)/var(--default-line-height-for-body) var(--font-body);
     --max-width: 1440px;
     --gutter: 1rem;
     --top-navigation-height: 4rem;
@@ -113,6 +114,7 @@
 
 @media screen and (min-width: 769px) {
     :root {
+        --base-line-height: 1.75;
         --type-heading-h1:600 var(--type-heading-h1-font-size)/var(--heading-line-height) var(--font-heading);
         --type-heading-h2: 500 var(--type-heading-h2-font-size)/var(--heading-line-height) var(--font-heading);
         --type-heading-h3: 400 var(--type-heading-h3-font-size)/var(--heading-line-height) var(--font-heading);

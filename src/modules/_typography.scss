@@ -1,62 +1,4 @@
 
-// :root{
-//     --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-//     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
-
-//     --font-body: Inter, var(--font-fallback);
-//     --font-heading: Inter, var(--font-fallback);
-
-//     --base-font-size: 100%;
-//     --base-line-height: 1.2;
-//     --intermediate-line-height: 1.5;
-//     --heading-line-height: var(--base-line-height);
-//     --heading-letter-spacing: -0.031rem;
-//     --font-content-line-height: 1.75;
-//     --font-body-strong-weight: 600;
-
-//     --type-heading-h1-font-size: 2.488rem;
-//     --type-heading-h2-font-size: 2.074rem;
-//     --type-heading-h3-font-size: 1.728rem;
-//     --type-heading-h4-font-size: 1.44rem;
-//     --type-heading-h5-font-size: 1.2rem;
-//     --type-base-font-size-rem: 1rem;
-//     --type-smaller-font-size: 0.833rem;
-//     --type-tiny-font-size: 0.694rem;
-
-//     --type-heading-h1-font-size-mobile: 1.802rem;
-//     --type-heading-h2-font-size-mobile: 1.602rem;
-//     --type-heading-h3-font-size-mobile: 1.424rem;
-//     --type-heading-h4-font-size-mobile: 1.266rem;
-
-//     --type-heading-h1: 600 var(--type-heading-h1-font-size-mobile) /
-//     var(--heading-line-height) var(--font-heading);
-//   --type-heading-h2: 500 var(--type-heading-h2-font-size-mobile) /
-//     var(--heading-line-height) var(--font-heading);
-//   --type-heading-h3: 300 var(--type-heading-h3-font-size-mobile) /
-//     var(--heading-line-height) var(--font-heading);
-//   --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile) /
-//     var(--heading-line-height) var(--font-heading);
-//   --type-heading-h5: 400 var(--type-heading-h5-font-size) /
-//     var(--heading-line-height) var(--font-heading);
-//   --type-heading-h6: 400 var(--type-base-font-size-rem) /
-//     var(--heading-line-height) var(--font-heading);
-//   --type-article-p: 400 var(--type-base-font-size-rem) /  var(--font-content-line-height) var(--font-body);
-// }
-
-//   @include large(){
-//     :root {
-//         --type-heading-h1: 600 var(--type-heading-h1-font-size) /
-//           var(--heading-line-height) var(--font-heading);
-//         --type-heading-h2: 500 var(--type-heading-h2-font-size) /
-//           var(--heading-line-height) var(--font-heading);
-//         --type-heading-h3: 300 var(--type-heading-h3-font-size) /
-//           var(--heading-line-height) var(--font-heading);
-//         --type-heading-h4: 400 var(--type-heading-h4-font-size) /
-//           var(--heading-line-height) var(--font-heading);
-//       }
-//   }
-
-
 
 .h1{
     --h1-font-size: var(--h1-font-size-sm);
@@ -84,54 +26,103 @@ h1,h2,h3 {
 }
 
 h1 {
+    line-height: 1.2;
+    font-size: calc(0.5rem + 2.5vmin);
     font: var(--type-heading-h1);
-    margin-bottom: 2rem;
+    // font-size:5rem;
+    // margin-bottom: 2rem;
     word-break: break-word;
 }
 
 @media screen and (min-width: 769px) {
     h1 {
-        font:var(--type-heading-h1)
+        // font:var(--type-heading-h1);
     }
 }
 
 h2 {
     font: var(--type-heading-h2);
-    margin: 4rem 0 .5rem
+    // margin: 4rem 0 .5rem
 }
 
 h3 {
     font: var(--type-heading-h3);
-    margin: 2rem 0 .5rem
+    // margin: 2rem 0 .5rem
 }
 
-h2~div~h3,h2~h3 {
-    margin-top: 1rem
+h3 {
+    font-size: var(--h3-font-size-sm);
+    @include large(){
+        font-size: var(--h3-font-size-lg);
+    }
+    letter-spacing: var(--h3-letter-spacing);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--h3-line-height-sm);
+    @include large(){
+        line-height: var(--h3-line-height-lg);
+    }
+    margin: var(--h3-margin-sm);
+    @include large(){
+        margin: var(--h3-margin-lg);
+    }
 }
+
 
 h4 {
-    font: var(--type-heading-h4);
-    letter-spacing: .5px;
-    margin: 2rem 0 1rem
+    font-size: var(--h4-font-size-sm);
+    @include large(){
+        font-size: var(--h4-font-size-lg);
+    }
+    letter-spacing: var(--h4-letter-spacing);
+    font-weight: var(--h4-font-weight);
+    line-height: var(--h4-line-height-sm);
+    @include large(){
+        line-height: var(--h4-line-height-lg);
+    }
+    margin: var(--h4-margin-sm);
+    @include large(){
+        margin: var(--h4-margin-lg);
+    }
 }
 
 h5 {
-    font: var(--type-heading-h5)
+    font-size: var(--h5-font-size);
+    letter-spacing: var(--h5-letter-spacing);
+    font-weight: 400;
+    line-height: var(--h5-line-height-sm);
+    @include large(){
+        line-height: var(--h5-line-height-lg);
+    }
+    margin: var(--h5-margin-sm);
+    @include large(){
+        margin: var(--h5-margin-lg);
+    }
 }
 
-h5,h6 {
-    letter-spacing: 1.5px;
-    margin: 2rem 0 1rem;
-    // text-transform: uppercase
-}
 
 h6 {
-    font: var(--type-heading-h6)
+    font-size: var(--h6-font-size);
+    letter-spacing: var(--h6-letter-spacing);
+    font-weight: 400;
+    line-height: var(--h6-line-height-sm);
+    @include large(){
+        line-height: var(--h6-line-height-lg);
+    }
+    margin: var(--h6-margin-sm);
+    @include large(){
+        margin: var(--h6-margin-lg);
+    }
 }
  
 p {
-    font: var(--type-article-p);
-    margin-bottom:1.8rem;
+    // font: var(--type-article-p);
+    // --type-article-p: 400 var(--type-base-font-size-rem) / var(--font-content-line-height) var(--font-body);
+
+    // font-family: has been set in body
+    font-size: 1rem;
+    // font-weight: has been set in body
+    // line-height: has been set in body
+    margin: var(--p-default-margin);
 }
 
 /* Makes text upper case*/
@@ -215,3 +206,6 @@ p {
 .black, .fw900{
     font-weight: 900;
 }
+
+
+//break-word
